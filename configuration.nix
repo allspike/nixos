@@ -50,7 +50,7 @@
   # services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
+  displayManager.plasma-login-manager.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
@@ -116,6 +116,9 @@
   protonup-qt
   mangohud
   git
+  gamescope
+  bottles
+  
   ];
 
   services.lact.enable = true;
