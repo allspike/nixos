@@ -6,7 +6,7 @@
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; # needed for cachyos kernel
   };
 
-  outputs = { self, nixpkgs }@inputs: {
+  outputs = { self, nixpkgs, chaotic }@inputs: {
     nixosConfigurations = {
       justin-nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
