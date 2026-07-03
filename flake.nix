@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable"; # needed for cachyos kernel
   };
 
   outputs = { self, nixpkgs }@inputs: {
@@ -11,6 +12,7 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          chaotic.nixosModules.default # add chaotic nix as a module
         ];
       };
     };
