@@ -53,6 +53,7 @@
   services = {
     displayManager.plasma-login-manager.enable = true;
     desktopManager.plasma6.enable = true;
+    scx.enable = true;
   };
   # Configure keymap in X11
   services.xserver.xkb = {
