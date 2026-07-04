@@ -15,7 +15,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_cachyos;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   networking.hostName = "justin-nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -102,9 +102,21 @@
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+    package = pkgs.steam.override {
+      extraEnv = {
+        MANGOHUD = "1";
+        MANGOHUD_CONFIG = "read_cfg,no_display";
+        GAMEMODERUN = "1";
+        PROTON_FSR_UPGRADE = "1";
+        PROTON_ENABLE_WAYLAND = "1";
+        DXVK_HDR = "1";
+        ENABLE_LAYER_MESA_ANTI_LAG = "1";
+      };
+    };
   };
 
   programs.gamemode.enable = true; # performance mode
+  programs.fish.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -124,7 +136,6 @@
   
   ];
 
-  chaotic.mesa-git.enable = true;
   services.lact.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
