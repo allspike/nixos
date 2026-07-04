@@ -132,7 +132,6 @@
   git
   gamescope
   bottles
-  pkgs.lan-mouse_git
   
   ];
 
