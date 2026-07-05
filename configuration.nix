@@ -134,7 +134,7 @@
         "z"
       ];
       theme = "robbyrussel";
-    }
+    };
     histSize = 10000;
     histFile = "$HOME/.zsh_history";
 
