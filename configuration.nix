@@ -99,10 +99,9 @@
     shell = pkgs.fish;
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
 
   programs = {
+    # install Firefox
     firefox.enable = true;
 
   # Install Steam
@@ -150,6 +149,7 @@
   retroarch-full
   pkgs.fish
   pkgs.starfish
+  pkgs.ghostty
   ];
 
   services.lact.enable = true;
