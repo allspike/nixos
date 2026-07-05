@@ -141,7 +141,8 @@
   fzf
   wootility
   mpv
-  
+  discord
+  retroarch-full
   ];
 
   services.lact.enable = true;
