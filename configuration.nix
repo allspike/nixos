@@ -122,7 +122,7 @@
 
   programs.gamemode.enable = true; # performance mode
 
-  programs.zsh.enable = {
+  programs.zsh = {
     enable = true;
     enableCompletion = true;
     autosuggestions.enable = true;
