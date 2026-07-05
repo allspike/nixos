@@ -56,7 +56,7 @@
     scx.enable = true;
 
     udev.packages = with pkgs; [
-      wootin-udev-rules
+      wooting-udev-rules
     ];
   };
   # Configure keymap in X11
