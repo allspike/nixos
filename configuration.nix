@@ -92,6 +92,7 @@
       kdePackages.kate
     #  thunderbird
     ];
+    shell = pkgs.zsh;
   };
 
   # Install firefox.
@@ -116,7 +117,8 @@
   };
 
   programs.gamemode.enable = true; # performance mode
-  programs.fish.enable = true;
+
+  programs.zsh.enable = true;
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -132,6 +134,9 @@
   git
   gamescope
   bottles
+  fzf
+  wootility
+  mpv
   
   ];
 
