@@ -122,7 +122,26 @@
 
   programs.gamemode.enable = true; # performance mode
 
-  programs.zsh.enable = true;
+  programs.zsh.enable = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    ohMyZsh = {
+      enable = true;
+      plugins = [
+        "git"
+        "z"
+      ];
+      theme = "robbyrussel";
+    }
+    histSize = 10000;
+    histFile = "$HOME/.zsh_history";
+
+    setOptions = [
+      "HIST_IGNORE_ALL_DUPS"
+    ];
+  };
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
