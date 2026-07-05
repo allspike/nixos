@@ -180,13 +180,16 @@
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
+  hardware = {
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
+    amdgpu = {
+      opencl.enable = true;
+      overdrive.enable = true;      
+    };
   };
-
-  hardware.amdgpu.opencl.enable = true;
-  
   # enable ROCm
 
   nixpkgs.config.rocmSupport = true;
