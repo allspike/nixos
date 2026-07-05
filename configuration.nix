@@ -54,6 +54,10 @@
     displayManager.plasma-login-manager.enable = true;
     desktopManager.plasma6.enable = true;
     scx.enable = true;
+
+    udev.packages = with pkgs; [
+      wootin-udev-rules
+    ];
   };
   # Configure keymap in X11
   services.xserver.xkb = {
