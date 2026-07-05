@@ -54,7 +54,7 @@
     displayManager.plasma-login-manager.enable = true;
     desktopManager.plasma6.enable = true;
     scx.enable = true;
-
+    lact.enable = true;
     udev.packages = with pkgs; [
       wooting-udev-rules
     ];
@@ -148,11 +148,9 @@
   discord
   retroarch-full
   pkgs.fish
-  pkgs.starfish
   pkgs.ghostty
   ];
 
-  services.lact.enable = true;
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
