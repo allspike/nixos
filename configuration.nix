@@ -121,7 +121,7 @@
           ENABLE_LAYER_MESA_ANTI_LAG = "1";
         };
       };
-    }
+    };
 
     fish.enable = true;
   };
