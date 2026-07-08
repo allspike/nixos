@@ -147,6 +147,7 @@
   mpv
   discord
   retroarch-full
+  nvme-cli
   pkgs.fish
   pkgs.ghostty
   ];
