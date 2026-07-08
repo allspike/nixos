@@ -148,6 +148,7 @@
   discord
   retroarch-full
   nvme-cli
+  btop
   pkgs.fish
   pkgs.ghostty
   ];
