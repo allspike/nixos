@@ -45,24 +45,23 @@
     LC_TIME = "en_US.UTF-8";
   };
 
-  # Enable the X11 windowing system.
-  # You can disable this if you're only using the Wayland session.
-  # services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
   services = {
+    # Enable Plasma Login Manager and Plasma 6
     displayManager.plasma-login-manager.enable = true;
     desktopManager.plasma6.enable = true;
+    xserver.enable = false;
     scx.enable = true;
     lact.enable = true;
     udev.packages = with pkgs; [
       wooting-udev-rules
     ];
-  };
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+    udev.extraRules = ''
+      # PS5 Dualsense Edge controller over USB hidraw
+      KERNEL=="hidraw*", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="0ce6", MODE="0660", TAG+="uaccess"
+
+    # PS5 DualSense controller over bluetooth hidraw
+    KERNEL=="hidraw*", KERNELS=="*054C:0CE6*", MODE="0660", TAG+="uaccess"
+    '';
   };
 
   # Enable CUPS to print documents.
@@ -104,7 +103,7 @@
     # install Firefox
     firefox.enable = true;
 
-  # Install Steam
+  # Install and Configure Steam
     steam = {
       enable = true;
       remotePlay.openFirewall = true;
