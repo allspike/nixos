@@ -140,7 +140,6 @@
   mangohud
   git
   gamescope
-  bottles
   fzf
   wootility
   mpv
