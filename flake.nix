@@ -15,7 +15,7 @@
         modules = [
           ./configuration.nix
           ({ pkgs, ...}: {
-            environment.systemPackages = { dusklight.packages.${system} }
+            environment.systemPackages = [ dusklight.packages.${system}.default ];
           })
         ];
       };
