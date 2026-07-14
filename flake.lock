@@ -12,12 +12,12 @@
         "revCount": 6708,
         "submodules": true,
         "type": "git",
-        "url": "https://github.com/twilitrealm/dusklight"
+        "url": "https://github.com/TwilitRealm/dusklight"
       },
       "original": {
         "submodules": true,
         "type": "git",
-        "url": "https://github.com/twilitrealm/dusklight"
+        "url": "https://github.com/TwilitRealm/dusklight"
       }
     },
     "nixpkgs": {

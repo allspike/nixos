@@ -6,8 +6,7 @@
 
     # Dusklight configuration with explicit submodule cloning enabled
     dusklight = {
-      url = "git+https://github.com/TwilitRealm/dusklight?ref=main";
-      submodules = true;
+      url = "git+https://github.com/TwilitRealm/dusklight?submodules=1";
     };
   };
 
