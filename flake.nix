@@ -5,7 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Dusklight
-    dusklight.url = "github:twilitrealm/dusklight";
+    dusklight.url = "github:twilitrealm/dusklight?submodules=1";
   };
 
   outputs = { self, nixpkgs, dusklight, ... }@inputs: 
