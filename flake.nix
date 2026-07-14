@@ -3,14 +3,25 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+    # Dusklight
+    dusklight = {
+      url = "github:twilitrealm/dusklight";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, }@inputs: {
+  outputs = { self, nixpkgs, dusklight }@inputs: {
     nixosConfigurations = {
       justin-nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          ( { pkgs }: {
+            environment.systemPackages = [
+              dusklight.packages.${pkgs.system}.default
+            ];
+          })
         ];
       };
     };
