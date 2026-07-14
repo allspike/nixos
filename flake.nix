@@ -5,8 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Dusklight
-    dusklight-flake = import  = {
-      url = "github:twilitrealm/dusklight";
+    dusklight.url = "github:twilitrealm/dusklight";
     };
   };
 
