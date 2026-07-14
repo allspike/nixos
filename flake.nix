@@ -4,8 +4,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    # Dusklight
-    dusklight.url = "github:twilitrealm/dusklight?submodules=1";
+    # Dusklight configuration with explicit submodule cloning enabled
+    dusklight = {
+      url = "git+https://github.com/TwilitRealm/dusklight?ref=main";
+      submodules = true;
+    };
   };
 
   outputs = { self, nixpkgs, dusklight, ... }@inputs: 
@@ -18,12 +21,12 @@
           modules = [
             ./configuration.nix
             ({ pkgs, ... }: {
-              environment.systemPackages = [
-                dusklight.packages.${system}.default
+              environment.systemPackages = [ 
+                dusklight.packages.${system}.default 
               ];
             })
           ];
         };
-      };    
-  };
+      };
+    };
 }
