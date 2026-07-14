@@ -5,22 +5,19 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Dusklight
-    dusklight = {
+    dusklight-flake = import  = {
       url = "github:twilitrealm/dusklight";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, dusklight }@inputs: {
+  outputs = { self, nixpkgs, dusklight, ... }@inputs: {
     nixosConfigurations = {
       justin-nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
-          ( { pkgs }: {
-            environment.systemPackages = [
-              dusklight.packages.${pkgs.system}.default
-            ];
+          ({ pkgs, ...}: {
+            environment.systemPackages = { dusklight.packages.${system} }
           })
         ];
       };
