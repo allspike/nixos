@@ -147,6 +147,7 @@
   retroarch-full
   nvme-cli
   btop
+  dusklight
   pkgs.fish
   pkgs.ghostty
   ];
