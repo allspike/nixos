@@ -6,7 +6,6 @@
 
     # Dusklight
     dusklight.url = "github:twilitrealm/dusklight";
-    };
   };
 
   outputs = { self, nixpkgs, dusklight, ... }@inputs: {
