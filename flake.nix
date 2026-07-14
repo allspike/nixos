@@ -8,7 +8,7 @@
     dusklight.url = "github:twilitrealm/dusklight";
   };
 
-  outputs = { self, nixpkgs, dusklight, ... }@inputs: {
+  outputs = { self, nixpkgs, dusklight, ... }@inputs: 
     let
       system = "x86_64-linux";
     in {
@@ -21,7 +21,7 @@
               environment.systemPackages = [
                 dusklight.packages.${system}.default
               ];
-            )}
+            })
           ];
         };
       };    
