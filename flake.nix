@@ -9,16 +9,21 @@
   };
 
   outputs = { self, nixpkgs, dusklight, ... }@inputs: {
-    nixosConfigurations = {
-      justin-nixos = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./configuration.nix
-          ({ pkgs, ...}: {
-            environment.systemPackages = [ dusklight.packages.${system}.default ];
-          })
-        ];
-      };
-    };
+    let
+      system = "x86_64-linux";
+    in {
+      nixosConfigurations = {
+        justin-nixos = nixpkgs.lib.nixosSystem {
+          inherit system;
+          modules = [
+            ./configuration.nix
+            ({ pkgs, ... }: {
+              environment.systemPackages = [
+                dusklight.packages.${system}.default
+              ];
+            )}
+          ];
+        };
+      };    
   };
 }
