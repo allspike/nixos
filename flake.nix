@@ -6,7 +6,6 @@
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-      backupFileExtension = "Backup";
     };
   };
 
@@ -23,6 +22,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
+              home-manager.backupFileExtension = "backup";
             }
           ];
         };
