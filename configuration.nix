@@ -17,5 +17,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.fish;
   };
-
+  system.stateVersion = "26.11";
+  
 }

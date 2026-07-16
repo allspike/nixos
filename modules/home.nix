@@ -5,7 +5,7 @@
   programs.fish.enable = true;
 
   home-manager.users."justins" = { pkgs, ... }: {
-    home.stateVersion = "26.05";
+    home.stateVersion = "26.11";
 
     # User-specific packages
     home.packages = with pkgs; [
