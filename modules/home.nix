@@ -26,7 +26,7 @@
       protonup-qt
       mangohud
       rpcs3
-      shadps4
+      shadps4-qtlauncher
       gamescope
       dusklight
       retroarch-full
