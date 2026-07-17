@@ -2,7 +2,7 @@
 
 {
   # System level shell hook to ensure fish is enabled
-  programs.fish.enable = true;
+  #programs.fish.enable = true;
 
   home-manager.users."justins" = { pkgs, ... }: {
     home.stateVersion = "26.11";
@@ -47,5 +47,18 @@
         theme = "autumn_night";
       };
     };
+    programs.thunderbird = {
+      enable = true;
+      
+    }
+
+    accounts.email.accounts = {
+      "personal-email" = {
+        address = "justin@spikerman.net";
+        realName = "Justin Spikerman"
+        thunderbird.enable = true;
+        
+      }
+    }
   };
 }
