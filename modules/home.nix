@@ -58,7 +58,7 @@
         realName = "Justin Spikerman"
         thunderbird.enable = true;
         
-      }
-    }
+      };
+    };
   };
 }
