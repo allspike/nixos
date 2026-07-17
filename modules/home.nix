@@ -55,7 +55,7 @@
     accounts.email.accounts = {
       "personal-email" = {
         address = "justin@spikerman.net";
-        realName = "Justin Spikerman"
+        realName = "Justin Spikerman";
         thunderbird.enable = true;
         
       };
