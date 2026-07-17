@@ -50,7 +50,7 @@
     programs.thunderbird = {
       enable = true;
       
-    }
+    };
 
     accounts.email.accounts = {
       "personal-email" = {
