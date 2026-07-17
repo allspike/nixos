@@ -13,6 +13,7 @@
       firefox
       ghostty
       discord
+      bitwarden-desktop
 
       # Dev & CLI tools
       helix
