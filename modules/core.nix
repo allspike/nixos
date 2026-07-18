@@ -2,11 +2,22 @@
 { pkgs, ... }:
 
 {
-  # Bootloader & Kernel
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_zen;
-
+  # Bootloader, Kernel config and Plymouth
+  boot = {
+    plymouth = {
+      enable = true;
+      theme = "nixos-logo";
+    };
+    loader.systemd-boot.enable = true;
+    loader.efi.canTouchEfiVariables =true;
+    kernelPackages = pkgs.linuxPackages_zen;
+    kernelParams = [
+      "quiet"
+      "splash"
+      "rd.systemd.show_status=auto"
+      "rd.udev.log_level=3"
+    ];
+  };
   # Networking
   networking.hostName = "justin-nixos";
   networking.networkmanager.enable = true;
