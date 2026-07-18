@@ -6,7 +6,12 @@
   boot = {
     plymouth = {
       enable = true;
-      theme = "nixos-logo";
+      theme = "nixos-bgrt";
+      themePackages = [ pkgs.nixos-bgrt-plymouth ];
+      extraConfig = ''
+        [Daemon]
+        DeviceScale=an-integer-scaling-factor
+        '';
     };
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables =true;
@@ -17,6 +22,7 @@
       "rd.systemd.show_status=auto"
       "rd.udev.log_level=3"
     ];
+    loader.timeout = 0;
   };
   # Networking
   networking.hostName = "justin-nixos";
