@@ -21,7 +21,6 @@
       retroarch-full
     ];
 
-    programs.fish.enable = true;
 
     programs.helix = {
       enable = true;
