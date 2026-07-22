@@ -21,6 +21,8 @@
 
     ../../modules/programs/gaming.nix
     ../../modules/home/justins.nix
+
+    ../../modules/virtualization/qemu.nix
   ];
 
   system.stateVersion = "26.11";
