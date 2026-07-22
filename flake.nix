@@ -9,23 +9,21 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
     in {
-      nixosConfigurations = {
-        justin-nixos = nixpkgs.lib.nixosSystem {
-          inherit system;
-          modules = [
-            ./configuration.nix
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.backupFileExtension = "backup";
-            }
-          ];
-        };
+      nixosConfigurations.justin-nixos = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./hosts/justin-nixos
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "backup";
+          }
+        ];
       };
     };
 }
