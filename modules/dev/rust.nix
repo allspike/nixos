@@ -10,13 +10,13 @@
       pkg-config
     ];
 
-    programs.hjelix.languages = {
+    programs.helix.languages = {
       language = [
         {
           name = "rust";
           auto-format = true;
         }
-      a;
+      ];
     };
   };
 }
