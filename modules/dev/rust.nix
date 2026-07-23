@@ -9,5 +9,14 @@
       cargo-watch
       pkg-config
     ];
+
+    programs.hjelix.languages = {
+      language = [
+        {
+          name = "rust";
+          auto-format = true;
+        }
+      ]
+    }
   };
 }
