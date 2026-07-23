@@ -13,6 +13,7 @@
     ../../modules/system/packages.nix
 
     ../../modules/desktop/plasma.nix
+    ../../modules/dev/rust.nix
 
     ../../modules/hardware/gpu-amd.nix
     ../../modules/hardware/audio.nix
