@@ -16,7 +16,7 @@
           name = "rust";
           auto-format = true;
         }
-      a;\]
+      a;
     };
   };
 }
