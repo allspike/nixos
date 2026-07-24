@@ -24,11 +24,11 @@
           '';
       };
       timeout = 0;
-      consoleLogLevel = 3;
-      initrd.verbose = false;
 
     };
 
+    consoleLogLevel = 3;
+    initrd.verbose = false;
     kernelPackages = pkgs.linuxPackages_zen;
     kernelParams = [
       "quiet"
