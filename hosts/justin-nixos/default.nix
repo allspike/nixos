@@ -19,6 +19,7 @@
     ../../modules/hardware/audio.nix
     ../../modules/hardware/printing.nix
     ../../modules/hardware/udev.nix
+    ../../modules/hardware/bluetooth.nix
 
     ../../modules/programs/gaming.nix
     ../../modules/home/justins.nix
