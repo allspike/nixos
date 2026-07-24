@@ -9,7 +9,7 @@
       themePackages = [ pkgs.nixos-bgrt-plymouth ];
       extraConfig = ''
         [Daemon]
-        DeviceScale=an-integer-scaling-factor
+        DeviceScale=1
       '';
     };
 
@@ -24,6 +24,8 @@
           '';
       };
       timeout = 0;
+      consoleLogLevel = 3;
+      initrd.verbose = false;
 
     };
 
