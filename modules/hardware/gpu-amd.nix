@@ -1,4 +1,6 @@
 {
+  boot.initrd.kernelModules = [ "amdgpu" ];
+  boot.kernelModules = [ "amdgpu" ];
   hardware = {
     graphics = {
       enable = true;
