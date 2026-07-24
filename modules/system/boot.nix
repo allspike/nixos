@@ -14,9 +14,17 @@
     };
 
     loader = {
-      systemd-boot.enable = true;
+      systemd-boot.enable = false;
       efi.canTouchEfiVariables = true;
+
+      limine = {
+        enable = true;
+        extraConfig = ''
+          remember_last_entry: yes
+          '';
+      };
       timeout = 0;
+
     };
 
     kernelPackages = pkgs.linuxPackages_zen;
