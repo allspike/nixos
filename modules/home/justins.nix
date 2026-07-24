@@ -19,6 +19,7 @@
       gamescope
       dusklight
       retroarch-full
+      fastfetch
     ];
 
 
