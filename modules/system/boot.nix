@@ -21,7 +21,7 @@
         enable = true;
         efiSupport = true;
         efiInstallAsRemovable = true;
-        secureBoot = true;
+        secureBoot.enable = true;
         extraConfig = ''
           remember_last_entry: yes
           '';
