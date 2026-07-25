@@ -27,14 +27,6 @@
 
     };
 
-    consoleLogLevel = 3;
-    initrd.verbose = false;
     kernelPackages = pkgs.linuxPackages_zen;
-    kernelParams = [
-      "quiet"
-      "splash"
-      "rd.systemd.show_status=auto"
-      "rd.udev.log_level=3"
-    ];
   };
 }
