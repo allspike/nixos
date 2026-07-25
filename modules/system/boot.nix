@@ -19,14 +19,14 @@
 
       limine = {
         enable = true;
+        efiSupport = true;
+        efiInstallAsRemovable = true;
+        secureBoot = true;
         extraConfig = ''
           remember_last_entry: yes
           '';
       };
-      timeout = 0;
-
     };
-
     kernelPackages = pkgs.linuxPackages_zen;
   };
 }
