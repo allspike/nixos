@@ -21,9 +21,6 @@
         enable = true;
         efiSupport = true;
         efiInstallAsRemovable = true;
-        extraConfig = ''
-          remember_last_entry: yes
-          '';
       };
     };
     kernelPackages = pkgs.linuxPackages_zen;
