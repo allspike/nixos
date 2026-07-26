@@ -11,6 +11,7 @@
     ../../modules/system/locale.nix
     ../../modules/system/nix.nix
     ../../modules/system/packages.nix
+    ../../modules/system/power.nix
 
     ../../modules/desktop/plasma.nix
     ../../modules/dev/rust.nix
