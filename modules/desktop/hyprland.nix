@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   programs.hyprland = {
@@ -8,12 +8,11 @@
   services.greetd = {
     enable = true;
     settings.default_session = {
-      command = "${lib.get Exe pkgs.tuigreet} --time --cmd Hyprland";
+      command = "${lib.getExe pkgs.tuigreet} --time --cmd Hyprland";
       user = "greeter";
     };
   };
 
-  services.displaymanager.defaultSession = "hyprland";
 
   environment.systemPackages = with pkgs; [
     tuigreet
@@ -30,7 +29,7 @@
   xdg.portal = {
     enable = true;
     extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk;
+      xdg-desktop-portal-gtk
     ];
   };
   security.polkit.enable = true;
