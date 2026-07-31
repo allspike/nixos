@@ -3,10 +3,12 @@
 {
   programs.gamemode.enable = true;
 
+
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
     dedicatedServer.openFirewall = true;
+    gamescopeSession.enable = true;
     package = pkgs.steam.override {
       extraEnv = {
         MANGOHUD = "1";
@@ -19,5 +21,9 @@
         ENABLE_LAYER_MESA_ANTI_LAG = "1";
       };
     };
+  };
+
+  programs.gamescope = {
+    enable = true;
   };
 }
