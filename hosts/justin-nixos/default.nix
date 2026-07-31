@@ -13,7 +13,7 @@
     ../../modules/system/packages.nix
     ../../modules/system/power.nix
 
-    ../../modules/desktop/plasma.nix
+    #../../modules/desktop/plasma.nix
     ../../modules/dev/rust.nix
 
     ../../modules/hardware/gpu-amd.nix
@@ -27,6 +27,12 @@
 
     ../../modules/virtualization/qemu.nix
   ];
+
+  omarchy = {
+    full_name = "Justin Spikerman";
+    email_address = "justin_spikerman.net";
+    theme = "tokyo-night";
+  };
 
   system.stateVersion = "26.11";
 }
