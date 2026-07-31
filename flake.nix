@@ -8,14 +8,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    omarchy-nix = {
-      url = "github:henrysipp/omarchy-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
   };
 
-  outputs = { nixpkgs, home-manager, omarchy-nix, ... }:
+  outputs = { nixpkgs, home-manager, ... }:
     let
       system = "x86_64-linux";
     in {
@@ -24,7 +19,6 @@
         modules = [
           ./hosts/justin-nixos
           home-manager.nixosModules.home-manager
-          omarchy-nix.nixosModules.default
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;

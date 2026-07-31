@@ -14,6 +14,7 @@
     ../../modules/system/power.nix
 
     #../../modules/desktop/plasma.nix
+    ../../modules/desktop/hyprland.nix
     ../../modules/dev/rust.nix
 
     ../../modules/hardware/gpu-amd.nix
