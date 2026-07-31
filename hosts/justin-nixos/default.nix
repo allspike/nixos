@@ -28,11 +28,7 @@
     ../../modules/virtualization/qemu.nix
   ];
 
-  omarchy = {
-    full_name = "Justin Spikerman";
-    email_address = "justin_spikerman.net";
-    theme = "tokyo-night";
-  };
+  
 
   system.stateVersion = "26.11";
 }
