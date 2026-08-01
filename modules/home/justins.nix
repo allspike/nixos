@@ -20,6 +20,7 @@
       dusklight
       retroarch-full
       fastfetch
+      bottles
     ];
 
 
