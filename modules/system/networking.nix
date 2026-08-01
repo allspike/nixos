@@ -8,7 +8,7 @@
     networkmanager.enable = true;
     nftables.enable = true;
     firewall = {
-      true;
+      enable = true;
       trustedInterfaces = [ config.services.tailscale.interfaceName ];
       allowedUDPPorts = [ config.services.tailscale.port ];
     };
