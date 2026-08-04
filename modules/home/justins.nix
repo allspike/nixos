@@ -8,7 +8,6 @@
       firefox
       ghostty
       discord
-      helix
       mpv
       wootility
       heroic
