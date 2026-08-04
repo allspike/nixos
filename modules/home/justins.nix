@@ -46,20 +46,14 @@
             auto-format = true;
             formatter.command = "nixfmt";
           }
-          {
-            name = "rust";
-            auto-format = true;
-          }
+          
         ];
       };
 
       extraPackages = [
         pkgs.nixd
         pkgs.nixfmt
-        # Rust Tools
-        pkgs.rust-analyzer
-        pkgs.rustfmt
-        pkgs.clippy
+       
       ];
     };
 

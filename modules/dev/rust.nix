@@ -8,6 +8,7 @@
       bacon
       cargo-watch
       pkg-config
+      
     ];
 
     programs.helix.languages = {
