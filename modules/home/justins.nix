@@ -22,12 +22,11 @@
       bottles
     ];
 
-
     programs.helix = {
       defaultEditor = true;
       enable = true;
       settings = {
-        theme = "gruvbox";
+        theme = "tokyonight";
         editor = {
           line-number = "absolute";
           cursor-shape = {
@@ -45,14 +44,14 @@
             auto-format = true;
             formatter.command = "nixfmt";
           }
-          
+
         ];
       };
 
       extraPackages = [
         pkgs.nixd
         pkgs.nixfmt
-       
+
       ];
     };
 
