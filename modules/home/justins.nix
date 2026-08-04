@@ -25,8 +25,42 @@
 
 
     programs.helix = {
+      defaultEditor = true;
       enable = true;
-      settings.theme = "autumn_night";
+      settings = {
+        theme = "gruvbox";
+        editor = {
+          line-number = "absolute";
+          cursor-shape = {
+            normal = "block";
+            insert = "bar";
+            select = "underline";
+          };
+        };
+      };
+
+      languages = {
+        language = [
+          {
+            name = "nix";
+            auto-format = true;
+            formatter.command = "nixfmt";
+          }
+          {
+            name = "rust";
+            auto-format = true;
+          }
+        ];
+      };
+
+      extraPackages = [
+        pkgs.nixd
+        pkgs.nixfmt
+        # Rust Tools
+        pkgs.rust-analyzer
+        pkgs.rustfmt
+        pkgs.clippy
+      ];
     };
 
     programs.thunderbird.enable = true;
