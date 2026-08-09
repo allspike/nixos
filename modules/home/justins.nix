@@ -6,7 +6,7 @@
 
     home.packages = with pkgs; [
       firefox
-      kitty
+      ghostty
       discord
       mpv
       wootility
