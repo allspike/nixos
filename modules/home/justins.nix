@@ -64,5 +64,15 @@
       realName = "Justin Spikerman";
       thunderbird.enable = true;
     };
+
+    programs.ghostty = {
+      enable = true;
+      settings = {
+        theme = "TokyoNight Night";
+        font-family = "JetBrainsMono Nerd font";
+        window-width = 100;
+        window-height = 100;
+      };
+    };
   };
 }
