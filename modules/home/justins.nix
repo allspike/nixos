@@ -71,7 +71,7 @@
         theme = "TokyoNight Night";
         font-family = "JetBrainsMono Nerd font";
         window-width = 100;
-        window-height = 100;
+        window-height = 50;
       };
     };
   };
