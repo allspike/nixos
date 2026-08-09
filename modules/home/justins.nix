@@ -6,7 +6,7 @@
 
     home.packages = with pkgs; [
       firefox
-      ghostty
+      kitty
       discord
       mpv
       wootility
@@ -20,6 +20,7 @@
       retroarch-full
       fastfetch
       bottles
+      bitwarden
     ];
 
     programs.helix = {
