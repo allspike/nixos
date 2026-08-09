@@ -20,7 +20,7 @@
       retroarch-full
       fastfetch
       bottles
-      bitwarden
+      bitwarden-desktop
     ];
 
     programs.helix = {
