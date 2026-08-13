@@ -15,7 +15,7 @@
       rpcs3
       shadps4-qtlauncher
       gamescope
-      dusklight.overrideAttrs
+      pkgs.dusklight.overrideAttrs
       (oldAttrs: {
         postPatch = (oldAttrs.postPatch or "") + ''
           sed -i '1i#include <cstring>' extern/aurora/lib/card/CardGciFolder.cpp
