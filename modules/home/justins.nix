@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  home-manager.users.justins = { pkgs, ... }: {
+  home-manager.users.justins = {
     home.stateVersion = "26.11";
 
     home.packages = with pkgs; [
@@ -16,13 +16,17 @@
       rpcs3
       shadps4-qtlauncher
       gamescope
-      dusklight
+      dusklight.overrideAttrs
+      (oldAttrs: {
+        postPatch = (oldAttrs.postPatch or "") + ''
+          sed -i '1i#include <cstring>' extern/aurora/lib/card/CardGciFolder.cpp
+        '';
+      })
       retroarch-full
       fastfetch
       bottles
       bitwarden-desktop
     ];
-
     programs.helix = {
       defaultEditor = true;
       enable = true;
