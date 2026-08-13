@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   home-manager.users.justins = { pkgs, ... }: {
     home.stateVersion = "26.11";
