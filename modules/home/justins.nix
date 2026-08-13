@@ -1,7 +1,5 @@
-{ pkgs, ... }:
-
 {
-  home-manager.users.justins = {
+  home-manager.users.justins = { pkgs, ... }: {
     home.stateVersion = "26.11";
 
     home.packages = with pkgs; [
