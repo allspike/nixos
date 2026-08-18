@@ -1,4 +1,3 @@
-
 { pkgs, ... }:
 
 {
@@ -13,10 +12,10 @@
     ../../modules/system/packages.nix
     ../../modules/system/power.nix
 
-    ../../modules/desktop/plasma.nix
-    ../../modules/desktop/kde_overlay.nix
+    #../../modules/desktop/plasma.nix
+    #../../modules/desktop/kde_overlay.nix
     #../../modules/desktop/hyprland.nix
-    #../../modules/desktop/cosmic.nix
+    ../../modules/desktop/cosmic.nix
     ../../modules/dev/rust.nix
 
     ../../modules/hardware/gpu-amd.nix
@@ -30,8 +29,6 @@
 
     ../../modules/virtualization/qemu.nix
   ];
-
-  
 
   system.stateVersion = "26.11";
 }

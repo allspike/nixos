@@ -1,0 +1,691 @@
+structuredAttrs is enabled
+Using udevCheckHook
+Running phase: unpackPhase
+@nix { "action": "setPhase", "phase": "unpackPhase" }
+unpacking source archive /nix/store/wsy9hlkwg2phhp49hc2i888icvd7cjdv-source
+source root is source
+Running phase: patchPhase
+@nix { "action": "setPhase", "phase": "patchPhase" }
+Running phase: updateAutotoolsGnuConfigScriptsPhase
+@nix { "action": "setPhase", "phase": "updateAutotoolsGnuConfigScriptsPhase" }
+Running phase: configurePhase
+@nix { "action": "setPhase", "phase": "configurePhase" }
+cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/share/doc/dusklight -DCMAKE_INSTALL_INFODIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/share/man -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/include -DCMAKE_INSTALL_SBINDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/lib -DCMAKE_STRIP=/nix/store/3d1c302vw7kc8a5vknhmn34c0pd7zm6m-gcc-wrapper-15.3.0/bin/strip -DCMAKE_RANLIB=/nix/store/3d1c302vw7kc8a5vknhmn34c0pd7zm6m-gcc-wrapper-15.3.0/bin/ranlib -DCMAKE_AR=/nix/store/3d1c302vw7kc8a5vknhmn34c0pd7zm6m-gcc-wrapper-15.3.0/bin/ar -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=/nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1 -DDUSK_WC_DESCRIBE:STRING=v1.3.1 -DCMAKE_DISABLE_FIND_PACKAGE_Git:BOOL=TRUE -DFETCHCONTENT_FULLY_DISCONNECTED:BOOL=TRUE -DFETCHCONTENT_SOURCE_DIR_CXXOPTS:STRING=/nix/store/vmp6as75y3876rbanhf8ppivbmphashm-source -DFETCHCONTENT_SOURCE_DIR_JSON:STRING=/nix/store/zi53bipc60dzz2vf7459087bjxbag9md-source -DFETCHCONTENT_SOURCE_DIR_DAWN_PREBUILT:STRING=/nix/store/dcm9s8jnj687ikhrgryynxwfnwbiaar3-source -DFETCHCONTENT_SOURCE_DIR_XXHASH:STRING=/nix/store/gx0fh4kbcxj8fidrilblyrrmkzfp6qxh-source -DFETCHCONTENT_SOURCE_DIR_FMT:STRING=/nix/store/qfrq1l25zax65xvvmvvm45f6q30abj7n-source -DFETCHCONTENT_SOURCE_DIR_TRACY:STRING=/nix/store/d9y2jqd4py2cf0acwx779ps1ibwi7cq1-tracy -DFETCHCONTENT_SOURCE_DIR_FREETYPE:STRING=/nix/store/043d41b261zzgpmrxp4islgh9l1j2j67-freetype-2.14.3.tar.xz -DFETCHCONTENT_SOURCE_DIR_ZSTD:STRING=/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source -DFETCHCONTENT_SOURCE_DIR_SQLITE3:STRING=/nix/store/w048fdidps36q1fx3ji7sjayq37bvnni-source -DFETCHCONTENT_SOURCE_DIR_IMGUI:STRING=/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source -DFETCHCONTENT_SOURCE_DIR_RMLUI:STRING=/nix/store/jb2dp20cgk1ckac86g69w9zzcd85bqgy-source -DAURORA_SDL3_PROVIDER:STRING=system -DAURORA_NOD_PROVIDER:STRING=system -DAURORA_NOD_LINKAGE:STRING=static -DCMAKE_CROSSCOMPILING:BOOL=TRUE -DDUSK_ENABLE_SENTRY_NATIVE:BOOL=FALSE
+-- Unable to find git, commit information will not be available
+-- Dusklight version set to v1.3.1
+-- Build type: RelWithDebInfo
+[33mCMake Warning (dev) at /nix/store/s35s3anz14hil6dk30m9ahax5447ap9r-cmake-4.3.4/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:182 (message):
+  CMAKE_CROSSCOMPILING has been set by the project, toolchain file, or user.
+  CMake is resetting it to false because CMAKE_SYSTEM_NAME was not set.  To
+  indicate cross compilation, only CMAKE_SYSTEM_NAME needs to be set.
+Call Stack (most recent call first):
+  CMakeLists.txt:99 (project)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- The C compiler identification is GNU 15.3.0
+-- The CXX compiler identification is GNU 15.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /nix/store/3d1c302vw7kc8a5vknhmn34c0pd7zm6m-gcc-wrapper-15.3.0/bin/gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /nix/store/3d1c302vw7kc8a5vknhmn34c0pd7zm6m-gcc-wrapper-15.3.0/bin/g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- aurora: Dawn auto-resolved provider: package
+-- aurora: Fetching prebuilt Dawn package from https://github.com/encounter/dawn-build/releases/download/v20260523.201736/dawn-linux-x86_64.tar.gz
+-- aurora: Using system/existing abseil
+-- aurora: Using system SDL3 (provider=system)
+[33mCMake Warning at extern/aurora/cmake/AuroraSDL3Provider.cmake:17 (message):
+  aurora: Static SDL3 requested but only shared is available
+Call Stack (most recent call first):
+  extern/aurora/cmake/AuroraSDL3Provider.cmake:65 (_aurora_sdl3_select_target)
+  extern/aurora/extern/CMakeLists.txt:50 (include)
+
+[0m
+-- aurora: Using shared SDL3
+-- aurora: Fetching xxhash
+-- xxHash build type: RelWithDebInfo
+-- Architecture: x86_64
+-- aurora: Fetching fmt
+-- {fmt} version: 12.2.0
+-- Build type: RelWithDebInfo
+-- aurora: Using existing libpng
+-- aurora: Using existing Freetype
+-- aurora: Fetching imgui
+-- aurora: Fetching sqlite3
+-- aurora: Fetching zstd
+-- The ASM compiler identification is GNU
+-- Found assembler: /nix/store/3d1c302vw7kc8a5vknhmn34c0pd7zm6m-gcc-wrapper-15.3.0/bin/gcc
+-- ZSTD VERSION: 1.5.7
+-- Performing Test C_FLAG_WALL
+-- Performing Test C_FLAG_WALL - Success
+-- Performing Test CXX_FLAG_WALL
+-- Performing Test CXX_FLAG_WALL - Success
+-- Performing Test C_FLAG_WEXTRA
+-- Performing Test C_FLAG_WEXTRA - Success
+-- Performing Test CXX_FLAG_WEXTRA
+-- Performing Test CXX_FLAG_WEXTRA - Success
+-- Performing Test C_FLAG_WUNDEF
+-- Performing Test C_FLAG_WUNDEF - Success
+-- Performing Test CXX_FLAG_WUNDEF
+-- Performing Test CXX_FLAG_WUNDEF - Success
+-- Performing Test C_FLAG_WSHADOW
+-- Performing Test C_FLAG_WSHADOW - Success
+-- Performing Test CXX_FLAG_WSHADOW
+-- Performing Test CXX_FLAG_WSHADOW - Success
+-- Performing Test C_FLAG_WCAST_ALIGN
+-- Performing Test C_FLAG_WCAST_ALIGN - Success
+-- Performing Test CXX_FLAG_WCAST_ALIGN
+-- Performing Test CXX_FLAG_WCAST_ALIGN - Success
+-- Performing Test C_FLAG_WCAST_QUAL
+-- Performing Test C_FLAG_WCAST_QUAL - Success
+-- Performing Test CXX_FLAG_WCAST_QUAL
+-- Performing Test CXX_FLAG_WCAST_QUAL - Success
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES - Success
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK - Success
+-- Performing Test C_FLAG_QUNUSED_ARGUMENTS
+-- Performing Test C_FLAG_QUNUSED_ARGUMENTS - Failed
+-- Performing Test CXX_FLAG_QUNUSED_ARGUMENTS
+-- Performing Test CXX_FLAG_QUNUSED_ARGUMENTS - Failed
+-- Performing Test C_FLAG_WA_NOEXECSTACK
+-- Performing Test C_FLAG_WA_NOEXECSTACK - Success
+-- Performing Test CXX_FLAG_WA_NOEXECSTACK
+-- Performing Test CXX_FLAG_WA_NOEXECSTACK - Success
+-- CMAKE_INSTALL_PREFIX: /nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1
+-- CMAKE_INSTALL_LIBDIR: /nix/store/nbscr07f7dmklijzxiwsl5qsay1k169v-dusklight-1.3.1/lib
+-- ZSTD_LEGACY_SUPPORT defined!
+-- ZSTD_MULTITHREAD_SUPPORT is enabled
+-- Found Threads: TRUE
+-- aurora: Fetching RmlUi
+-- Found Freetype: /nix/store/5gazxn5x85bkqjxcnwzkzn0yps81fqal-freetype-2.14.3/lib/libfreetype.so (found version "2.14.3")
+-- Found Freetype::Freetype v2.14.3 - Freetype font engine enabled
+-- aurora: Fetching Tracy
+[0mParsing public/common/TracyVersion.hpp file[0m
+[0mVERSION 0.13.1[0m
+-- Could NOT find rocprofiler-sdk (missing: rocprofiler-sdk_DIR)
+-- TRACY_ENABLE: OFF
+-- TRACY_ON_DEMAND: OFF
+-- TRACY_CALLSTACK: OFF
+-- TRACY_NO_CALLSTACK: OFF
+-- TRACY_NO_CALLSTACK_INLINES: OFF
+-- TRACY_ONLY_LOCALHOST: OFF
+-- TRACY_NO_BROADCAST: OFF
+-- TRACY_ONLY_IPV4: OFF
+-- TRACY_NO_CODE_TRANSFER: OFF
+-- TRACY_NO_CONTEXT_SWITCH: OFF
+-- TRACY_NO_EXIT: OFF
+-- TRACY_NO_SAMPLING: OFF
+-- TRACY_NO_VERIFY: OFF
+-- TRACY_NO_VSYNC_CAPTURE: OFF
+-- TRACY_NO_FRAME_IMAGE: OFF
+-- TRACY_NO_SYSTEM_TRACING: OFF
+-- TRACY_PATCHABLE_NOPSLEDS: OFF
+-- TRACY_DELAYED_INIT: OFF
+-- TRACY_MANUAL_LIFETIME: OFF
+-- TRACY_FIBERS: OFF
+-- TRACY_NO_CRASH_HANDLER: OFF
+-- TRACY_TIMER_FALLBACK: OFF
+-- TRACY_LIBUNWIND_BACKTRACE: OFF
+-- TRACY_SYMBOL_OFFLINE_RESOLVE: OFF
+-- TRACY_LIBBACKTRACE_ELF_DYNLOAD_SUPPORT: OFF
+-- TRACY_DEBUGINFOD: OFF
+-- TRACY_IGNORE_MEMORY_FAULTS: OFF
+-- TRACY_VERBOSE: OFF
+-- TRACY_DEMANGLE: OFF
+-- aurora: Using system nod (provider=system, linkage=static)
+-- aurora: Found nod via find_package(nod)
+-- dusklight: Using system libjpeg-turbo
+-- dusklight: Fetching cxxopts
+-- dusklight: Fetching nlohmann/json
+-- Using the multi-header code from /nix/store/zi53bipc60dzz2vf7459087bjxbag9md-source/include/
+-- dusklight: Disabled update checker (libcurl + HTTPS/SSL not found)
+-- Configuring done (5.9s)
+-- Generating done (0.5s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    FETCHCONTENT_FULLY_DISCONNECTED
+    FETCHCONTENT_SOURCE_DIR_FREETYPE
+
+[0m
+-- Build files have been written to: /build/source/build
+cmake: enabled parallel building
+cmake: enabled parallel installing
+Running phase: buildPhase
+@nix { "action": "setPhase", "phase": "buildPhase" }
+build flags: -j16
+[1/1780] Scanning /nix/store/qfrq1l25zax65xvvmvvm45f6q30abj7n-source/src/os.cc for CXX dependencies
+[2/1780] Scanning /nix/store/qfrq1l25zax65xvvmvvm45f6q30abj7n-source/src/format.cc for CXX dependencies
+[3/1780] Generating CXX dyndep file _deps/fmt-build/CMakeFiles/fmt.dir/CXX.dd
+[4/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui_backends.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/backends/imgui_impl_sdlrenderer3.cpp.o
+[5/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui_backends.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/backends/imgui_impl_sdl3.cpp.o
+[6/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui_backends.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/backends/imgui_impl_wgpu.cpp.o
+[7/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/Debugger.cpp.o
+[8/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/Geometry.cpp.o
+[9/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/misc/cpp/imgui_stdlib.cpp.o
+[10/1780] Linking CXX static library extern/aurora/extern/libimgui_backends.a
+[11/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/__/lib/imgui_config.cpp.o
+[12/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/ElementDebugDocument.cpp.o
+[13/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/DebuggerSystemInterface.cpp.o
+[14/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/ElementContextHook.cpp.o
+[15/1780] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o
+[16/1780] Building CXX object extern/aurora/extern/CMakeFiles/rmlui_backends.dir/nix/store/jb2dp20cgk1ckac86g69w9zzcd85bqgy-source/Backends/RmlUi_Platform_SDL.cpp.o
+[17/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/debug.c.o
+[18/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/error_private.c.o
+[19/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/DebuggerPlugin.cpp.o
+[20/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/ElementLog.cpp.o
+[21/1780] Building C object _deps/xxhash-build/CMakeFiles/xxhash.dir/nix/store/gx0fh4kbcxj8fidrilblyrrmkzfp6qxh-source/xxhash.c.o
+[22/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/threading.c.o
+[23/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/entropy_common.c.o
+[24/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/pool.c.o
+[25/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/zstd_common.c.o
+[26/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/xxhash.c.o
+[27/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/hist.c.o
+[28/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/fse_compress.c.o
+[29/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_compress_literals.c.o
+[30/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/common/fse_decompress.c.o
+[31/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_compress_superblock.c.o
+[32/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_compress_sequences.c.o
+[33/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/misc/freetype/imgui_freetype.cpp.o
+[34/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/huf_compress.c.o
+[35/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_ldm.c.o
+[36/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_preSplit.c.o
+[37/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/ElementDataModels.cpp.o
+[38/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/cmake_pch.hxx.gch
+[39/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstdmt_compress.c.o
+[40/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Box.cpp.o
+[41/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/imgui_tables.cpp.o
+[42/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/CallbackTexture.cpp.o
+[43/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_compress.c.o
+[44/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Clock.cpp.o
+[45/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/BoxShadowCache.cpp.o
+[46/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/CompiledFilterShader.cpp.o
+[47/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/BaseXMLParser.cpp.o
+[48/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_double_fast.c.o
+[49/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ContextInstancer.cpp.o
+[50/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ComputedValues.cpp.o
+[51/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ContextInstancerDefault.cpp.o
+[52/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ComputeProperty.cpp.o
+[53/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ConvolutionFilter.cpp.o
+[54/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataController.cpp.o
+[55/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataControllerDefault.cpp.o
+[56/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/decompress/huf_decompress.c.o
+[57/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataModelHandle.cpp.o
+[58/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/imgui_draw.cpp.o
+[59/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Core.cpp.o
+[60/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataVariable.cpp.o
+[61/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_opt.c.o
+[62/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Decorator.cpp.o
+[63/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataTypeRegister.cpp.o
+[64/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataView.cpp.o
+[65/1780] Building CXX object _deps/rmlui-build/Source/Debugger/CMakeFiles/rmlui_debugger.dir/ElementInfo.cpp.o
+[66/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorNinePatch.cpp.o
+[67/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorText.cpp.o
+[68/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorTiled.cpp.o
+[69/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataExpression.cpp.o
+[70/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorShader.cpp.o
+[71/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_fast.c.o
+[72/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorTiledHorizontal.cpp.o
+[73/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorTiledBox.cpp.o
+[74/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorUtilities.cpp.o
+[75/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorTiledImage.cpp.o
+[76/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/EffectSpecification.cpp.o
+[77/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorTiledVertical.cpp.o
+[78/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DocumentHeader.cpp.o
+[79/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementDefinition.cpp.o
+[80/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataViewDefault.cpp.o
+[81/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DecoratorGradient.cpp.o
+[82/1780] Building CXX object _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o
+[83/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementBackgroundBorder.cpp.o
+[84/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementInstancer.cpp.o
+[85/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementMeta.cpp.o
+[86/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementEffects.cpp.o
+[87/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementScroll.cpp.o
+[88/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementDocument.cpp.o
+[89/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/imgui_demo.cpp.o
+[90/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementHandle.cpp.o
+[91/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/EventInstancer.cpp.o
+[92/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/EventInstancerDefault.cpp.o
+[93/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Event.cpp.o
+[94/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/EventListenerInstancer.cpp.o
+[95/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FileInterface.cpp.o
+[96/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FileInterfaceDefault.cpp.o
+[97/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Context.cpp.o
+[98/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementAnimation.cpp.o
+[99/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Filter.cpp.o
+[100/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementText.cpp.o
+[101/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementUtilities.cpp.o
+[102/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/EventDispatcher.cpp.o
+[103/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEffect.cpp.o
+[104/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ElementStyle.cpp.o
+[105/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/EventSpecification.cpp.o
+[106/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEffectBlur.cpp.o
+[107/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEffectInstancer.cpp.o
+[108/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEffectGlow.cpp.o
+[109/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineInterface.cpp.o
+[110/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEffectOutline.cpp.o
+[111/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEffectShadow.cpp.o
+[112/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Geometry.cpp.o
+[113/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FilterBlur.cpp.o
+[114/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Log.cpp.o
+[115/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/LogDefault.cpp.o
+[116/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FilterBasic.cpp.o
+[117/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/GeometryBackgroundBorder.cpp.o
+[118/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Memory.cpp.o
+[119/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ObserverPtr.cpp.o
+[120/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Plugin.cpp.o
+[121/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/DataModel.cpp.o
+[122/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Math.cpp.o
+[123/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Profiling.cpp.o
+[124/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/MeshUtilities.cpp.o
+[125/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FilterDropShadow.cpp.o
+[126/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/imgui_widgets.cpp.o
+[127/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertiesIteratorView.cpp.o
+[128/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PluginRegistry.cpp.o
+[129/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyDictionary.cpp.o
+[130/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Property.cpp.o
+[131/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserBoxShadow.cpp.o
+[132/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserColorStopList.cpp.o
+[133/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserKeyword.cpp.o
+[134/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserRatio.cpp.o
+[135/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserString.cpp.o
+[136/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserFilter.cpp.o
+[137/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyDefinition.cpp.o
+[138/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/RenderInterface.cpp.o
+[139/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserNumber.cpp.o
+[140/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserFontEffect.cpp.o
+[141/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserTransform.cpp.o
+[142/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/GeometryBoxShadow.cpp.o
+[143/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/RenderManagerAccess.cpp.o
+[144/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/RenderInterfaceCompatibility.cpp.o
+[145/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserColour.cpp.o
+[146/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/ScrollController.cpp.o
+[147/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StreamFile.cpp.o
+[148/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StreamMemory.cpp.o
+[149/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Stream.cpp.o
+[150/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/RenderManager.cpp.o
+[151/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Spritesheet.cpp.o
+[152/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StyleSheetSelector.cpp.o
+[153/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserAnimation.cpp.o
+[154/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StringUtilities.cpp.o
+[155/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StyleSheetContainer.cpp.o
+[156/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Texture.cpp.o
+[157/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TemplateCache.cpp.o
+[158/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StyleSheetFactory.cpp.o
+[159/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Template.cpp.o
+[160/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StyleSheetNode.cpp.o
+[161/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TextureLayoutRectangle.cpp.o
+[162/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertyParserDecorator.cpp.o
+[163/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TextureLayoutRow.cpp.o
+[164/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/SystemInterface.cpp.o
+[165/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Traits.cpp.o
+[166/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TextureLayout.cpp.o
+[167/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Element.cpp.o
+[168/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TextureLayoutTexture.cpp.o
+[169/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TransformState.cpp.o
+[170/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Transform.cpp.o
+[171/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TransformPrimitive.cpp.o
+[172/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TextureDatabase.cpp.o
+[173/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/XMLNodeHandler.cpp.o
+[174/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Tween.cpp.o
+[175/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/WidgetScroll.cpp.o
+[176/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/XMLNodeHandlerBody.cpp.o
+[177/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/XMLNodeHandlerDefault.cpp.o
+[178/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/XMLNodeHandlerHead.cpp.o
+[179/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Variant.cpp.o
+[180/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/XMLNodeHandlerTemplate.cpp.o
+[181/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/XMLParseTools.cpp.o
+[182/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Factory.cpp.o
+[183/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TransformUtilities.cpp.o
+[184/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/URL.cpp.o
+[185/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/TypeConverter.cpp.o
+[186/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementFormControl.cpp.o
+[187/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/XMLParser.cpp.o
+[188/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementFormControlSelect.cpp.o
+[189/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementFormControlInput.cpp.o
+[190/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementLabel.cpp.o
+[191/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementImage.cpp.o
+[192/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementForm.cpp.o
+[193/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StyleSheet.cpp.o
+[194/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementTextSelection.cpp.o
+[195/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementFormControlTextArea.cpp.o
+[196/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/PropertySpecification.cpp.o
+[197/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/InputType.cpp.o
+[198/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/InputTypeButton.cpp.o
+[199/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementTabSet.cpp.o
+[200/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/WidgetTextInputMultiLine.cpp.o
+[201/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/InputTypeRange.cpp.o
+[202/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/InputTypeSubmit.cpp.o
+[203/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/InputTypeText.cpp.o
+[204/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/WidgetTextInputSingleLine.cpp.o
+[205/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/ElementProgress.cpp.o
+[206/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/WidgetTextInputSingleLinePassword.cpp.o
+[207/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/XMLNodeHandlerSelect.cpp.o
+[208/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/XMLNodeHandlerTextArea.cpp.o
+[209/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/XMLNodeHandlerTabSet.cpp.o
+[210/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/InputTypeCheckbox.cpp.o
+[211/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/BlockFormattingContext.cpp.o
+[212/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/FormattingContext.cpp.o
+[213/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/FloatedBoxSpace.cpp.o
+[214/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/InlineBox.cpp.o
+[215/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/BlockContainer.cpp.o
+[216/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/LayoutBox.cpp.o
+[217/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/WidgetSlider.cpp.o
+[218/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/InputTypeRadio.cpp.o
+[219/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/ContainerBox.cpp.o
+[220/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/InlineLevelBox.cpp.o
+[221/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/LayoutEngine.cpp.o
+[222/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/WidgetDropDown.cpp.o
+[223/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/LayoutPools.cpp.o
+[224/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/InlineContainer.cpp.o
+[225/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/ReplacedFormattingContext.cpp.o
+[226/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/LayoutDetails.cpp.o
+[227/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/FlexFormattingContext.cpp.o
+[228/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineDefault/FontEngineInterfaceDefault.cpp.o
+[229/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/decompress/zstd_ddict.c.o
+[230/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineDefault/FontFamily.cpp.o
+[231/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/LineBox.cpp.o
+[232/1780] Building ASM object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/decompress/huf_decompress_amd64.S.o
+[233/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/TableFormattingContext.cpp.o
+[234/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineDefault/FontFace.cpp.o
+[235/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StyleSheetSpecification.cpp.o
+[236/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/dictBuilder/cover.c.o
+[237/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/decompress/zstd_decompress.c.o
+[238/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/dictBuilder/fastcover.c.o
+[239/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineDefault/FontProvider.cpp.o
+[240/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineDefault/FreeTypeInterface.cpp.o
+[241/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineDefault/FontFaceLayer.cpp.o
+[242/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/dictBuilder/zdict.c.o
+[243/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Elements/WidgetTextInput.cpp.o
+[244/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/Layout/TableFormattingDetails.cpp.o
+[245/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c.o
+In function 'ZSTDv01_decodeLiteralsBlock',
+    inlined from 'ZSTD_decompressBlock' at /nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1899:17:
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1505:20: warning: 'litbp.origSize' may be used uninitialized [-Wmaybe-uninitialized]
+ 1505 |             size_t rleSize = litbp.origSize;
+      |                    ^~~~~~~
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c: In function 'ZSTD_decompressBlock':
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1489:23: note: 'litbp.origSize' was declared here
+ 1489 |     blockProperties_t litbp;
+      |                       ^~~~~
+In function 'ZSTDv01_decodeLiteralsBlock',
+    inlined from 'ZSTD_decompressBlock' at /nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1899:17:
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1496:5: warning: '*(unsigned int *)((char *)&litbp + offsetof(blockProperties_t, blockType))' may be used uninitialized [-Wmaybe-uninitialized]
+ 1496 |     switch(litbp.blockType)
+      |     ^~~~~~
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c: In function 'ZSTD_decompressBlock':
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1489:23: note: '*(unsigned int *)((char *)&litbp + offsetof(blockProperties_t, blockType))' was declared here
+ 1489 |     blockProperties_t litbp;
+      |                       ^~~~~
+In function 'ZSTD_decompressSequences',
+    inlined from 'ZSTD_decompressBlock' at /nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1904:12:
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1850:35: warning: 'dumpsLength' may be used uninitialized [-Wmaybe-uninitialized]
+ 1850 |         seqState.dumpsEnd = dumps + dumpsLength;
+      |                             ~~~~~~^~~~~~~~~~~~~
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c: In function 'ZSTD_decompressBlock':
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1826:23: note: 'dumpsLength' was declared here
+ 1826 |     size_t errorCode, dumpsLength;
+      |                       ^~~~~~~~~~~
+In function 'ZSTD_decompressSequences',
+    inlined from 'ZSTD_decompressBlock' at /nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1904:12:
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1850:35: warning: 'dumps' may be used uninitialized [-Wmaybe-uninitialized]
+ 1850 |         seqState.dumpsEnd = dumps + dumpsLength;
+      |                             ~~~~~~^~~~~~~~~~~~~
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c: In function 'ZSTD_decompressBlock':
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1830:17: note: 'dumps' was declared here
+ 1830 |     const BYTE* dumps;
+      |                 ^~~~~
+In function 'ZSTD_decompressSequences',
+    inlined from 'ZSTD_decompressBlock' at /nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1904:12:
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1858:83: warning: 'nbSeq' may be used uninitialized [-Wmaybe-uninitialized]
+ 1858 |         for ( ; (FSE_reloadDStream(&(seqState.DStream)) <= FSE_DStream_completed) && (nbSeq>0) ; )
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c: In function 'ZSTD_decompressBlock':
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1829:9: note: 'nbSeq' was declared here
+ 1829 |     int nbSeq;
+      |         ^~~~~
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c: In function 'ZSTDv01_decompressDCtx':
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1936:9: warning: '*(unsigned int *)((char *)&blockProperties + offsetof(blockProperties_t, blockType))' may be used uninitialized [-Wmaybe-uninitialized]
+ 1936 |         switch(blockProperties.blockType)
+      |         ^~~~~~
+/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v01.c:1918:23: note: '*(unsigned int *)((char *)&blockProperties + offsetof(blockProperties_t, blockType))' was declared here
+ 1918 |     blockProperties_t blockProperties;
+      |                       ^~~~~~~~~~~~~~~
+[246/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/FontEngineDefault/FontFaceHandleDefault.cpp.o
+[247/1780] Building CXX object _deps/tracy-build/CMakeFiles/TracyClient.dir/public/TracyClient.cpp.o
+[248/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/compress/zstd_lazy.c.o
+[249/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/dictBuilder/divsufsort.c.o
+[250/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v03.c.o
+[251/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v04.c.o
+[252/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v05.c.o
+[253/1780] Building CXX object extern/aurora/extern/CMakeFiles/imgui.dir/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source/imgui.cpp.o
+[254/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v02.c.o
+[255/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v06.c.o
+[256/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/legacy/zstd_v07.c.o
+[257/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/logging.cpp.o
+[258/1780] Building C object _deps/zstd-build/lib/CMakeFiles/libzstd_static.dir/nix/store/w0fyq7vdpja3yawg943an3zr644cqx1v-source/lib/decompress/zstd_decompress_block.c.o
+[259/1780] Linking CXX static library extern/aurora/extern/libimgui.a
+[260/1780] Linking C static library _deps/xxhash-build/libxxhash.a
+[261/1780] Linking CXX static library _deps/fmt-build/libfmt.a
+[262/1780] Linking C static library _deps/zstd-build/lib/libzstd.a
+[263/1780] Linking CXX static library _deps/tracy-build/libTracyClient.a
+[264/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/system_info.cpp.o
+[265/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/rmlui/FileInterface_SDL.cpp.o
+[266/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/imgui.cpp.o
+[267/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/dawn/BackendBinding.cpp.o
+[268/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/rmlui/SystemInterface_Aurora.cpp.o
+[269/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/webgpu/gpu_cache.cpp.o
+[270/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/clear.cpp.o
+[271/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/rmlui.cpp.o
+[272/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/aurora.cpp.o
+[273/1780] Building CXX object _deps/rmlui-build/Source/Core/CMakeFiles/rmlui_core.dir/StyleSheetParser.cpp.o
+[274/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/rmlui/RmlUi_Backend_Aurora.cpp.o
+[275/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/dds_io.cpp.o
+[276/1780] Linking CXX static library librmlui.a
+[277/1780] Linking CXX static library librmlui_debugger.a
+[278/1780] Linking CXX static library extern/aurora/extern/librmlui_backends.a
+[279/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/tex_palette_conv.cpp.o
+[280/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/webgpu/gpu.cpp.o
+[281/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gx/fifo.cpp.o
+[282/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/texture.cpp.o
+[283/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/input.cpp.o
+/build/source/extern/aurora/lib/input.cpp:24:55: warning: multi-character character constant [-Wmultichar]
+   24 | constexpr uint32_t kPortPreferencesMagic = SBIG('CPRT');
+      |                                                       ^
+/build/source/extern/aurora/lib/input.cpp:24:55: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/input.cpp:24:55: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/input.cpp:24:55: warning: multi-character character constant [-Wmultichar]
+[284/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/depth_peek.cpp.o
+[285/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/texture_convert.cpp.o
+[286/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/rmlui/WebGPURenderInterface.cpp.o
+[287/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gx/pipeline.cpp.o
+[288/1780] Building CXX object extern/aurora/CMakeFiles/aurora_core.dir/lib/window.cpp.o
+[289/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXBump.cpp.o
+[290/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXCull.cpp.o
+[291/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/tex_copy_conv.cpp.o
+[292/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gx/command_processor.cpp.o
+[293/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gx/shader_info.cpp.o
+[294/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/common.cpp.o
+[295/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/pipeline_cache.cpp.o
+[296/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXCpu2Efb.cpp.o
+[297/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXDispList.cpp.o
+[298/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/texture_replacement.cpp.o
+[299/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXDraw.cpp.o
+[300/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXExtra.cpp.o
+[301/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXFifo.cpp.o
+[302/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gx/gx.cpp.o
+[303/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXGeometry.cpp.o
+[304/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSInit.cpp.o
+[305/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXManage.cpp.o
+[306/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXLighting.cpp.o
+[307/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXTransform.cpp.o
+[308/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXPixel.cpp.o
+[309/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSMemory.cpp.o
+[310/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gfx/png_io.cpp.o
+[311/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSBootInfo.cpp.o
+[312/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSAlloc.cpp.o
+/build/source/extern/aurora/lib/dolphin/os/OSAlloc.cpp:8:34: warning: '__OSCurrHeap' initialized and declared 'extern'
+    8 | extern "C" volatile OSHeapHandle __OSCurrHeap = -1;
+      |                                  ^~~~~~~~~~~~
+[313/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXTev.cpp.o
+[314/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSReport.cpp.o
+[315/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSArena.cpp.o
+[316/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/AR.cpp.o
+[317/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDIndirect.cpp.o
+[318/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDGeometry.cpp.o
+[319/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDPixel.cpp.o
+[320/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDTev.cpp.o
+[321/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXGet.cpp.o
+[322/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDTexture.cpp.o
+[323/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDTransform.cpp.o
+[324/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDLight.cpp.o
+[325/1780] Building C object extern/aurora/CMakeFiles/aurora_mtx.dir/lib/dolphin/mtx/mtxstack.c.o
+[326/1780] Building C object extern/aurora/CMakeFiles/aurora_mtx.dir/lib/dolphin/mtx/mtxvec.c.o
+[327/1780] Building C object extern/aurora/CMakeFiles/aurora_mtx.dir/lib/dolphin/mtx/mtx44.c.o
+[328/1780] Building C object extern/aurora/CMakeFiles/aurora_mtx.dir/lib/dolphin/mtx/mtx.c.o
+[329/1780] Building C object extern/aurora/CMakeFiles/aurora_mtx.dir/lib/dolphin/mtx/vec.c.o
+[330/1780] Building C object extern/aurora/CMakeFiles/aurora_mtx.dir/lib/dolphin/mtx/quat.c.o
+[331/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXVert.cpp.o
+In file included from /build/source/extern/aurora/lib/dolphin/gx/GXVert.cpp:2:
+/build/source/extern/aurora/lib/dolphin/gx/GXVert.cpp: In function 'void GXBegin(GXPrimitive, GXVtxFmt, u16)':
+/build/source/extern/aurora/lib/dolphin/gx/GXVert.cpp:25:22: warning: bitwise operation between different enumeration types 'GXVtxFmt' and 'GXPrimitive' is deprecated [-Wdeprecated-enum-enum-conversion]
+   25 |   GX_WRITE_U8(vtxFmt | primitive);
+      |               ~~~~~~~^~~~~~~~~~~
+/build/source/extern/aurora/lib/dolphin/gx/__gx.h:7:73: note: in definition of macro 'GX_WRITE_U8'
+    7 | #define GX_WRITE_U8(ub) aurora::gx::fifo::write_u8(static_cast<uint8_t>(ub))
+      |                                                                         ^~
+[332/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSAddress.cpp.o
+[333/1780] Building CXX object extern/aurora/CMakeFiles/aurora_vi.dir/lib/dolphin/vi/vi.cpp.o
+[334/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXPerf.cpp.o
+[335/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDBase.cpp.o
+In file included from /build/source/extern/aurora/lib/dolphin/gd/gd.hpp:3,
+                 from /build/source/extern/aurora/lib/dolphin/gd/GDBase.cpp:3:
+/build/source/extern/aurora/lib/dolphin/gd/../../internal.hpp:102:9: warning: 'ASSERT' redefined
+  102 | #define ASSERT(cond, msg, ...)                                                                                         \
+      |         ^~~~~~
+In file included from /build/source/extern/aurora/lib/dolphin/gd/GDBase.cpp:2:
+/build/source/extern/aurora/include/dolphin/os.h:306:9: note: this is the location of the previous definition
+  306 | #define ASSERT(cond) ASSERTLINE(__LINE__, cond)
+      |         ^~~~~~
+[336/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gd.dir/lib/dolphin/gd/GDAurora.cpp.o
+[337/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/SRAM.cpp.o
+[338/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/Directory.cpp.o
+[339/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/BlockAllocationTable.cpp.o
+[340/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/File.cpp.o
+[341/1780] Building CXX object libs/freeverb/CMakeFiles/freeverb.dir/comb.cpp.o
+[342/1780] Building CXX object libs/freeverb/CMakeFiles/freeverb.dir/allpass.cpp.o
+[343/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXFrameBuffer.cpp.o
+[344/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/Util.cpp.o
+[345/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/gx/shader.cpp.o
+[346/1780] Building CXX object CMakeFiles/JSystem_JParticle.dir/libs/JSystem/src/JParticle/JPAResourceManager.cpp.o
+[347/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/CardGciFolder.cpp.o
+FAILED: [code=1] extern/aurora/CMakeFiles/aurora_card.dir/lib/card/CardGciFolder.cpp.o 
+/nix/store/3d1c302vw7kc8a5vknhmn34c0pd7zm6m-gcc-wrapper-15.3.0/bin/g++ -DAURORA -DAURORA_ENABLE_GX -DAURORA_ENABLE_RMLUI -DIMGUI_ENABLE_FREETYPE -DIMGUI_USER_CONFIG=\"aurora/imgui_config.h\" -DRMLUI_SDL_VERSION_MAJOR=3 -DRMLUI_STATIC_LIB -DTARGET_PC -DWEBGPU_DAWN -I/build/source/extern/aurora/include -I/nix/store/qfrq1l25zax65xvvmvvm45f6q30abj7n-source/include -I/nix/store/gx0fh4kbcxj8fidrilblyrrmkzfp6qxh-source/cmake_unofficial/.. -I/nix/store/adjq2msgqjw1q4dmddgsic2lk2b3n80q-source -I/nix/store/jb2dp20cgk1ckac86g69w9zzcd85bqgy-source/Include -I/nix/store/jb2dp20cgk1ckac86g69w9zzcd85bqgy-source/Backends -O2 -g -DNDEBUG -std=gnu++20 -fPIC -MD -MT extern/aurora/CMakeFiles/aurora_card.dir/lib/card/CardGciFolder.cpp.o -MF extern/aurora/CMakeFiles/aurora_card.dir/lib/card/CardGciFolder.cpp.o.d -o extern/aurora/CMakeFiles/aurora_card.dir/lib/card/CardGciFolder.cpp.o -c /build/source/extern/aurora/lib/card/CardGciFolder.cpp
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp: In member function 'virtual aurora::card::ECardResult aurora::card::CardGciFolder::createFile(const char*, size_t, aurora::card::FileHandle&)':
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:108:8: error: 'memcpy' is not a member of 'std'; did you mean 'wmemcpy'?
+  108 |   std::memcpy(gciFileHeader->m_game, m_game, 4);
+      |        ^~~~~~
+      |        wmemcpy
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:109:8: error: 'memcpy' is not a member of 'std'; did you mean 'wmemcpy'?
+  109 |   std::memcpy(gciFileHeader->m_maker, m_maker, 2);
+      |        ^~~~~~
+      |        wmemcpy
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp: In member function 'virtual aurora::card::ECardResult aurora::card::CardGciFolder::getStatus(uint32_t, aurora::card::CardStat&) const':
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:223:8: error: 'strncpy' is not a member of 'std'; did you mean 'strncpy'?
+  223 |   std::strncpy(statOut.x0_fileName, file->m_filename, 32);
+      |        ^~~~~~~
+In file included from /nix/store/m300ngckdmal8wnl3bjbpwca3a5bn74c-glibc-2.42-67-dev/include/features.h:524,
+                 from /nix/store/7sh9061yj9yl20ndc00rqw4d0bd80m1j-gcc-15.3.0/include/c++/15.3.0/x86_64-unknown-linux-gnu/bits/os_defines.h:39,
+                 from /nix/store/7sh9061yj9yl20ndc00rqw4d0bd80m1j-gcc-15.3.0/include/c++/15.3.0/x86_64-unknown-linux-gnu/bits/c++config.h:727,
+                 from /nix/store/7sh9061yj9yl20ndc00rqw4d0bd80m1j-gcc-15.3.0/include/c++/15.3.0/bits/requires_hosted.h:31,
+                 from /nix/store/7sh9061yj9yl20ndc00rqw4d0bd80m1j-gcc-15.3.0/include/c++/15.3.0/filesystem:37,
+                 from /build/source/extern/aurora/lib/card/CardGciFolder.hpp:2,
+                 from /build/source/extern/aurora/lib/card/CardGciFolder.cpp:1:
+/nix/store/m300ngckdmal8wnl3bjbpwca3a5bn74c-glibc-2.42-67-dev/include/bits/string_fortified.h:96:1: note: 'strncpy' declared here
+   96 | __NTH (strncpy (__fortify_clang_overload_arg (char *, __restrict, __dest),
+      | ^~~~~
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp: In member function 'virtual void aurora::card::CardGciFolder::setCurrentGame(const char*)':
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:288:31: error: 'strlen' is not a member of 'std'; did you mean 'mbrlen'?
+  288 |   if (game != nullptr && std::strlen(game) == 4) {
+      |                               ^~~~~~
+      |                               mbrlen
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:289:10: error: 'memcpy' is not a member of 'std'; did you mean 'wmemcpy'?
+  289 |     std::memcpy(m_game, game, 4);
+      |          ^~~~~~
+      |          wmemcpy
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp: In member function 'virtual const uint8_t* aurora::card::CardGciFolder::getCurrentGame() const':
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:294:12: error: 'strlen' is not a member of 'std'; did you mean 'mbrlen'?
+  294 |   if (std::strlen(m_game) == sizeof(m_game) - 1) {
+      |            ^~~~~~
+      |            mbrlen
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp: In member function 'virtual void aurora::card::CardGciFolder::setCurrentMaker(const char*)':
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:302:32: error: 'strlen' is not a member of 'std'; did you mean 'mbrlen'?
+  302 |   if (maker != nullptr && std::strlen(maker) == 2) {
+      |                                ^~~~~~
+      |                                mbrlen
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:303:10: error: 'memcpy' is not a member of 'std'; did you mean 'wmemcpy'?
+  303 |     std::memcpy(m_maker, maker, 2);
+      |          ^~~~~~
+      |          wmemcpy
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp: In member function 'virtual const uint8_t* aurora::card::CardGciFolder::getCurrentMaker() const':
+/build/source/extern/aurora/lib/card/CardGciFolder.cpp:308:12: error: 'strlen' is not a member of 'std'; did you mean 'mbrlen'?
+  308 |   if (std::strlen(m_maker) == sizeof(m_maker) - 1) {
+      |            ^~~~~~
+      |            mbrlen
+[348/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/FileIO.cpp.o
+[349/1780] Building CXX object libs/freeverb/CMakeFiles/freeverb.dir/revmodel.cpp.o
+[350/1780] Building CXX object CMakeFiles/JSystem_JParticle.dir/libs/JSystem/src/JParticle/JPAExtraShape.cpp.o
+[351/1780] Building CXX object CMakeFiles/JSystem_JParticle.dir/libs/JSystem/src/JParticle/JPAResource.cpp.o
+[352/1780] Building CXX object extern/aurora/CMakeFiles/aurora_dvd.dir/lib/dolphin/dvd/dvd.cpp.o
+In file included from /build/source/extern/aurora/lib/dolphin/dvd/dvd.cpp:15:
+/build/source/extern/aurora/lib/dolphin/dvd/../../internal.hpp:102:9: warning: 'ASSERT' redefined
+  102 | #define ASSERT(cond, msg, ...)                                                                                         \
+      |         ^~~~~~
+In file included from /build/source/extern/aurora/lib/dolphin/dvd/dvd.cpp:3:
+/build/source/extern/aurora/include/dolphin/os.h:306:9: note: this is the location of the previous definition
+  306 | #define ASSERT(cond) ASSERTLINE(__LINE__, cond)
+      |         ^~~~~~
+[353/1780] Building CXX object CMakeFiles/JSystem_JParticle.dir/libs/JSystem/src/JParticle/JPABaseShape.cpp.o
+[354/1780] Building CXX object extern/aurora/CMakeFiles/aurora_os.dir/lib/dolphin/os/OSTime.cpp.o
+[355/1780] Building CXX object extern/aurora/CMakeFiles/aurora_si.dir/lib/dolphin/si/si.cpp.o
+[356/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/DolphinCardPath.cpp.o
+[357/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/card/CardRawFile.cpp.o
+[358/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXAurora.cpp.o
+[359/1780] Building CXX object extern/aurora/CMakeFiles/aurora_gx.dir/lib/dolphin/gx/GXTexture.cpp.o
+[360/1780] Building CXX object extern/aurora/CMakeFiles/aurora_card.dir/lib/dolphin/card.cpp.o
+In file included from /build/source/extern/aurora/lib/dolphin/card.cpp:5:
+/build/source/extern/aurora/lib/dolphin/../internal.hpp:102:9: warning: 'ASSERT' redefined
+  102 | #define ASSERT(cond, msg, ...)                                                                                         \
+      |         ^~~~~~
+In file included from /build/source/extern/aurora/include/dolphin/card.h:4,
+                 from /build/source/extern/aurora/lib/dolphin/card.cpp:1:
+/build/source/extern/aurora/include/dolphin/os.h:306:9: note: this is the location of the previous definition
+  306 | #define ASSERT(cond) ASSERTLINE(__LINE__, cond)
+      |         ^~~~~~
+[361/1780] Building CXX object extern/aurora/CMakeFiles/aurora_pad.dir/lib/dolphin/pad/pad.cpp.o
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:468:27: warning: multi-character character constant [-Wmultichar]
+  468 |   if (magic != SBIG('CTRL')) {
+      |                           ^
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:468:27: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:468:27: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:468:27: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1158:49: warning: multi-character character constant [-Wmultichar]
+ 1158 | constexpr uint32_t k_keyboardMagic = SBIG('KBND');
+      |                                                 ^
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1158:49: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1158:49: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1158:49: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1277:43: warning: multi-character character constant [-Wmultichar]
+ 1277 |     constexpr uint32_t magic = SBIG('CTRL');
+      |                                           ^
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1277:43: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1277:43: warning: multi-character character constant [-Wmultichar]
+/build/source/extern/aurora/lib/dolphin/pad/pad.cpp:1277:43: warning: multi-character character constant [-Wmultichar]
+[362/1780] Building C object extern/aurora/extern/CMakeFiles/sqlite3.dir/nix/store/w048fdidps36q1fx3ji7sjayq37bvnni-source/sqlite3.c.o
+ninja: build stopped: subcommand failed.

@@ -1,4 +1,3 @@
-
 { pkgs, ... }:
 
 {
@@ -24,5 +23,12 @@
       };
     };
     kernelPackages = pkgs.linuxPackages_zen;
+    kernelParams = [
+      "quiet"
+      "splash"
+      "rd.udev.log_level=3"
+      "rd.systemd.show_status=auto"
+    ];
+    initrd.systemd.enable = true;
   };
 }
