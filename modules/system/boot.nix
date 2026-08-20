@@ -22,7 +22,7 @@
         efiInstallAsRemovable = true;
       };
     };
-    kernelPackages = pkgs.linuxKernel.kernels.linux_latest;
+    kernelPackages = pkgs.linuxPackages_latest;
     kernelParams = [
       "quiet"
       "splash"
