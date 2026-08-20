@@ -22,7 +22,7 @@
         efiInstallAsRemovable = true;
       };
     };
-    kernelPackages = pkgs.linuxPackages_zen;
+    kernelPackages = pkgs.linux_latest;
     kernelParams = [
       "quiet"
       "splash"

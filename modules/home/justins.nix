@@ -15,7 +15,7 @@
       rpcs3
       shadps4-qtlauncher
       gamescope
-      #dusklight
+      dusklight
       retroarch-full
       fastfetch
       bottles
