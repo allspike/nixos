@@ -11,6 +11,7 @@
     ../../modules/system/nix.nix
     ../../modules/system/packages.nix
     ../../modules/system/power.nix
+    ../../modules/system/nh.nix
 
     #../../modules/desktop/plasma.nix
     #../../modules/desktop/kde_overlay.nix

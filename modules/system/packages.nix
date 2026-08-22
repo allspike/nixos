@@ -6,5 +6,7 @@
     fzf
     nvme-cli
     btop
+
   ];
+
 }
