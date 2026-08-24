@@ -8,5 +8,6 @@
     btop
 
   ];
+  services.fwupd.enable = true;
 
 }
