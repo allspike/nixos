@@ -7,13 +7,24 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    jovian = {
+      url = "github:Jovian-Experiments/Jovian-NixOS";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs =
+    {
+      nixpkgs,
+      home-manager,
+      jovian,
+      ...
+    }:
     let
       system = "x86_64-linux";
-    in {
+    in
+    {
       nixosConfigurations.justin-nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
@@ -24,6 +35,7 @@
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
           }
+          jovian.nixosModules.default
         ];
       };
     };
