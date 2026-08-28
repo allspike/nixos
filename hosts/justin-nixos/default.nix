@@ -26,7 +26,6 @@
     ../../modules/hardware/bluetooth.nix
 
     ../../modules/programs/gaming.nix
-    ../../modules/programs/jovian.nix
     ../../modules/home/justins.nix
 
     ../../modules/virtualization/qemu.nix

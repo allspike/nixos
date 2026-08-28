@@ -7,10 +7,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    jovian = {
-      url = "github:Jovian-Experiments/Jovian-NixOS";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
   };
 
@@ -18,7 +14,6 @@
     {
       nixpkgs,
       home-manager,
-      jovian,
       ...
     }:
     let
@@ -35,7 +30,6 @@
             home-manager.useUserPackages = true;
             home-manager.backupFileExtension = "backup";
           }
-          jovian.nixosModules.default
         ];
       };
     };
