@@ -13,10 +13,10 @@
     ../../modules/system/power.nix
     ../../modules/system/nh.nix
 
-    #../../modules/desktop/plasma.nix
-    #../../modules/desktop/kde_overlay.nix
+    ../../modules/desktop/plasma.nix
+    ../../modules/desktop/kde_overlay.nix
     #../../modules/desktop/hyprland.nix
-    ../../modules/desktop/cosmic.nix
+    #../../modules/desktop/cosmic.nix
     ../../modules/dev/rust.nix
 
     ../../modules/hardware/gpu-amd.nix
