@@ -19,6 +19,7 @@
       retroarch-full
       fastfetch
       bottles
+      faugus-launcher
       bitwarden-desktop
     ];
     programs.helix = {
