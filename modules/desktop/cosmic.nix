@@ -15,4 +15,9 @@
     #disable libadwaita theming for Firefox
     "widget.gtk.libadwaita-colors.enable" = false;
   };
+
+  environment.systemPackages = with pkgs; [
+    cosmic-ext-tweaks
+  ];
+
 }
