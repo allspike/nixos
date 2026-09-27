@@ -1,25 +1,17 @@
 { pkgs, ... }:
 {
   home-manager.users.justins = { pkgs, ... }: {
+    imports = [
+      ./gaming.nix
+    ];
     home.stateVersion = "26.11";
 
     home.packages = with pkgs; [
       firefox
-      ghostty
       discord
       mpv
       wootility
-      heroic
-      protonup-qt
-      mangohud
-      rpcs3
-      shadps4-qtlauncher
-      gamescope
-      dusklight
-      retroarch-full
       fastfetch
-      bottles
-      faugus-launcher
       bitwarden-desktop
     ];
     programs.helix = {

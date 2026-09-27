@@ -24,7 +24,7 @@
     ../../modules/hardware/udev.nix
     ../../modules/hardware/bluetooth.nix
 
-    ../../modules/programs/gaming.nix
+    ../../modules/programs/steam.nix
     ../../modules/home/justins.nix
 
     ../../modules/virtualization/qemu.nix
