@@ -57,21 +57,8 @@
 
     programs.thunderbird.enable = true;
 
-    accounts.email.accounts.personal-email = {
-      primary = true;
-      address = "justin@spikerman.net";
-      realName = "Justin Spikerman";
-      thunderbird.enable = true;
-    };
-
-    programs.ghostty = {
+    programs.foot = {
       enable = true;
-      settings = {
-        theme = "TokyoNight Night";
-        font-family = "JetBrainsMono Nerd font";
-        window-width = 100;
-        window-height = 50;
-      };
     };
   };
 }
