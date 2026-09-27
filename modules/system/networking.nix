@@ -5,7 +5,7 @@
     enable = true;
   };
   networking = {
-    hostName = "justin-nixos";
+    hostName = "allspike-nixos";
     networkmanager.enable = true;
     nftables.enable = true;
     firewall = {

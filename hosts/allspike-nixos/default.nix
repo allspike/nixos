@@ -25,10 +25,10 @@
     ../../modules/hardware/bluetooth.nix
 
     ../../modules/programs/steam.nix
-    ../../modules/home/justins.nix
+    ../../modules/home/allspike.nix
 
     ../../modules/virtualization/qemu.nix
   ];
 
-  system.stateVersion = "26.11";
+  system.stateVersion = "26.05";
 }

@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  home-manager.users.justins = { pkgs, ... }: {
+  home-manager.users.allspike = { pkgs, ... }: {
     imports = [
       ./gaming.nix
     ];

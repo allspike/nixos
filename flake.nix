@@ -1,5 +1,5 @@
 {
-  description = "Justin's Flake";
+  description = "Allspike's Flake";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -20,10 +20,10 @@
       system = "x86_64-linux";
     in
     {
-      nixosConfigurations.justin-nixos = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.allspike-nixos = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          ./hosts/justin-nixos
+          ./hosts/allspike-nixos
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
