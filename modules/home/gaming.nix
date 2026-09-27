@@ -11,5 +11,6 @@
     retroarch-full
     bottles
     faugus-launcher
+    protonup-qt
   ];
 }
