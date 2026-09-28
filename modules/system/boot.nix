@@ -52,6 +52,12 @@
     ];
   };
 
+  fileSystems."/mnt/storage" = {
+    device = "dev/mapper/luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
+    fsType = "btrfs";
+    options = [ "defaults" ];
+  };
+
   systemd.tmpfiles.rules = [
     "d /mnt/storage 0777 root root -"
   ];
