@@ -57,10 +57,24 @@
     options = [
       "defaults"
       "nofail"
-      "x-systemd.requires=systemd-cryptsetup@luks\\x2db0cf11e3\\x2dbfd7\\x2d4bfb\\x2d9819\\x2d287301a1c25e.service"
-      "x-systemd.after=systemd-cryptsetup@luks\\x2db0cf11e3\\x2dbfd7\\x2d4bfb\\x2d9819\\x2d287301a1c25e.service"
     ];
   };
+
+  systemd.services."systemd-cryptsetup@luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e" = {
+    before = [ "mnt-storage.mount" ];
+    wantedBy = [ "mnt-storage.mount" ];
+  };
+
+  systemd.mounts = [
+    {
+      where = "/mnt/storage";
+      what = "/dev/mapper/luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
+      type = "btrfs";
+      requires = [ "systemd-cryptsetup@luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e.service" ];
+      after = [ "systemd-cryptsetup@luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e.service" ];
+
+    }
+  ];
 
   systemd.tmpfiles.rules = [
     "d /mnt/storage 0777 root root -"
