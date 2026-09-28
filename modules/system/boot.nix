@@ -52,16 +52,6 @@
     ];
   };
 
-  fileSystems."/mnt/storage" = {
-    device = "/dev/mapper/data-storage";
-    fsType = "btrfs";
-    options = [
-      "defaults"
-      "compress=zstd"
-      "nofail"
-      "x-systemd.requires=systemd-cryptsetup@data-storage.service"
-    ];
-  };
   systemd.tmpfiles.rules = [
     "d /mnt/storage 0777 root root -"
   ];
