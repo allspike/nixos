@@ -59,6 +59,7 @@
       "defaults"
       "compress=zstd"
       "nofail"
+      "x-systemd.requires=systemd-cryptsetup@data-storage.service"
     ];
   };
   systemd.tmpfiles.rules = [
