@@ -19,8 +19,19 @@
         "tpm_tis"
         "tpm_crb"
       ];
-      luks.devices."luks-60e53d91-b168-4524-b458-fae12dc78386".device =
+      luks.devices."luks-60e53d91-b168-4524-b458-fae12dc78386" ={
+        device =
         "/dev/disk/by-uuid/60e53d91-b168-4524-b458-fae12dc78386";
+        crypttabExtraOpts = [ "tpm2-device=auto" ];
+      luks.devices."data-storage" = {
+        device = "/dev/disk/by-uuid/9ba37ac0-9b71-4dc2-a8d8-e47e840d01eb";
+        crypttabExtraOpts = [ "nofail" "tpm2-device=auto"];
+      };
+    };
+    fileSystems."/mnt/storage" = {
+      device = "/dev/mapper/data-storage";
+      fsType = "btrfs";
+      options = ["defaults" "compress=zstd" "nofail"];
     };
     loader = {
       systemd-boot.enable = false;
