@@ -26,14 +26,10 @@
           "tpm2-measure-pcr=yes"
         ];
       };
-      luks.devices."luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e" = {
-        device = "/dev/disk/by-uuid/b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
-        crypttabExtraOpts = [
-          "nofail"
-          "tpm2-device=auto"
-          "tpm2-measure-pcr=yes"
-        ];
-      };
+    };
+    luks.devices."luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e" = {
+      device = "/dev/disk/by-uuid/b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
+      keyFile = "/etc/storage.key";
     };
     loader = {
       systemd-boot.enable = false;
@@ -62,7 +58,6 @@
       "defaults"
       "compress=zstd"
       "nofail"
-      "x-systemd.automount"
     ];
   };
   systemd.tmpfiles.rules = [
