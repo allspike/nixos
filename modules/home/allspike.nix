@@ -5,7 +5,7 @@
       ./gaming.nix
     ];
     home.stateVersion = "26.05";
-
+    home.homeDirectory = "/home/allspike";
     home.packages = with pkgs; [
       firefox
       discord
