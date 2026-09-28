@@ -1,6 +1,7 @@
 { pkgs, ... }:
 
 {
+  security.tpm2.enable = true;
   boot = {
     plymouth = {
       enable = true;
@@ -12,10 +13,14 @@
       '';
     };
     initrd = {
-	systemd.enable = true;
-	kernelModules = [ "tpm_tis" "tpm_crb" ];
-	luks.devices."luks-60e53d91-b168-4524-b458-fae12dc78386".device = "/dev/disk/by-uuid/60e53d91-b168-4524-b458-fae12dc78386";
-};
+      systemd.enable = true;
+      kernelModules = [
+        "tpm_tis"
+        "tpm_crb"
+      ];
+      luks.devices."luks-60e53d91-b168-4524-b458-fae12dc78386".device =
+        "/dev/disk/by-uuid/60e53d91-b168-4524-b458-fae12dc78386";
+    };
     loader = {
       systemd-boot.enable = false;
       efi.canTouchEfiVariables = true;
