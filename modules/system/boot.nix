@@ -14,10 +14,7 @@
     initrd = {
 	systemd.enable = true;
 	kernelModules = [ "tpm_tis" "tpm_crb" ];
-	luks.devices."luks-60e53d91-b168-4524-b458-fae12dc78386" = {
-		device = "/dev/disk/by-uuid/60e53d91-b168-4524-b458-fae12dc78386";
-		cryttabExtraOpts = [ "tpm2-device=auto" ];
-};
+	luks.devices."luks-60e53d91-b168-4524-b458-fae12dc78386".device = "/dev/disk/by-uuid/60e53d91-b168-4524-b458-fae12dc78386";
 };
     loader = {
       systemd-boot.enable = false;
