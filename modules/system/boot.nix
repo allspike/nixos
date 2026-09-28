@@ -48,7 +48,7 @@
     ];
   };
   environment.etc."crypttab".text = ''
-    luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e UUID=luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e /etc/storage.key luks,nofail,key-slot=0
+    luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e UUID=b0cf11e3-bfd7-4bfb-9819-287301a1c25e /etc/storage.key luks,nofail,key-slot=0
   '';
 
   fileSystems."/mnt/storage" = {
@@ -59,22 +59,6 @@
       "nofail"
     ];
   };
-
-  systemd.services."systemd-cryptsetup@luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e" = {
-    before = [ "mnt-storage.mount" ];
-    wantedBy = [ "mnt-storage.mount" ];
-  };
-
-  systemd.mounts = [
-    {
-      where = "/mnt/storage";
-      what = "/dev/mapper/luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
-      type = "btrfs";
-      requires = [ "systemd-cryptsetup@luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e.service" ];
-      after = [ "systemd-cryptsetup@luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e.service" ];
-
-    }
-  ];
 
   systemd.tmpfiles.rules = [
     "d /mnt/storage 0777 root root -"
