@@ -43,6 +43,7 @@
         enable = true;
         efiSupport = true;
         efiInstallAsRemovable = true;
+        secureBoot.enable = true;
       };
     };
     kernelPackages = pkgs.linuxPackages_latest;
