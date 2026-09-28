@@ -26,6 +26,10 @@
           "tpm2-measure-pcr=yes"
         ];
       };
+      luks.devices."luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e" = {
+        device = "/dev/disk/by-uuid/b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
+        keyFile = "/etc/storage.key";
+      };
     };
 
     loader = {
@@ -48,10 +52,6 @@
     ];
   };
 
-  luks.devices."luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e" = {
-    device = "/dev/disk/by-uuid/b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
-    keyFile = "/etc/storage.key";
-  };
   fileSystems."/mnt/storage" = {
     device = "/dev/mapper/data-storage";
     fsType = "btrfs";
