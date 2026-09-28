@@ -21,13 +21,17 @@
       ];
       luks.devices."luks-60e53d91-b168-4524-b458-fae12dc78386" = {
         device = "/dev/disk/by-uuid/60e53d91-b168-4524-b458-fae12dc78386";
-        crypttabExtraOpts = [ "tpm2-device=auto" ];
+        crypttabExtraOpts = [
+          "tpm2-device=auto"
+          "tpm2-measure-pcr=yes"
+        ];
       };
-      luks.devices."data-storage" = {
-        device = "/dev/disk/by-uuid/9ba37ac0-9b71-4dc2-a8d8-e47e840d01eb";
+      luks.devices."luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e" = {
+        device = "/dev/disk/by-uuid/b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
         crypttabExtraOpts = [
           "nofail"
           "tpm2-device=auto"
+          "tpm2-measure-pcr=yes"
         ];
       };
     };
@@ -57,6 +61,7 @@
       "defaults"
       "compress=zstd"
       "nofail"
+      "x-systemd.automount"
     ];
   };
 }
