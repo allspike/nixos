@@ -6,6 +6,7 @@
     fzf
     nvme-cli
     btop
+    sbctl
 
   ];
   services.fwupd.enable = true;
