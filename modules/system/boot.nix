@@ -64,4 +64,7 @@
       "x-systemd.automount"
     ];
   };
+  systemd.tmpfiles.rules = [
+    "d /mnt/storage 0777 root root -"
+  ];
 }
