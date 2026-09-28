@@ -14,7 +14,7 @@
     };
     initrd = {
       systemd.enable = true;
-      systemd.enableTpm2 = true;
+      systemd.tpm2.enable = true;
       kernelModules = [
         "tpm_tis"
         "tpm_crb"
