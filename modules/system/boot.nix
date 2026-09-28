@@ -47,18 +47,23 @@
       "rd.systemd.show_status=auto"
     ];
   };
-  environment.etc."crypttab".text = ''
-    storage /dev/disk/by-uuid/b0cf11e3-bfd7-4bfb-9819-287301a1c25e /etc/storage.key luks,nofail
-  '';
 
+  systemd.services.unlock-secondary-drive = {
+    description = "Unlock Secondary LUKS Drive";
+    wantedBy = [ "multi-user.target" ];
+    before = [ "mnt-storage.mount" ];
+    serviceConfig = {
+      Type = "oneshot";
+      RemainAfterExit = true;
+      ExecStart = "${pkgs.cryptsetup}/bin/cryptsetup open /dev/disk/by-uuid/b0cf11e3-bfd7-4bfb-9819-287301a1c25e luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e --key-file /etc/storage.key";
+      ExecStop = "${pkgs.cryptsetup}/bin/cryptsetup close luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
+    };
+  };
   fileSystems."/storage" = {
     device = "dev/mapper/luks-b0cf11e3-bfd7-4bfb-9819-287301a1c25e";
     fsType = "btrfs";
     options = [
       "defaults"
-      "nofail"
-      "x-systemd.requires=systemd-cryptsetup@luks\x2db0cf11e3\x2dbfd7\x2d4bfb\x2d9819\x2d287301a1c25e.service"
-      "x-systemd.after=systemd-cryptsetup@luks\x2db0cf11e3\x2dbfd7\x2d4bfb\x2d9819\x2d287301a1c25e.service"
     ];
   };
 
