@@ -57,6 +57,8 @@
     options = [
       "defaults"
       "nofail"
+      "x-systemd.requires=systemd-cryptsetup@luks\x2db0cf11e3\x2dbfd7\x2d4bfb\x2d9819\x2d287301a1c25e.service"
+      "x-systemd.after=systemd-cryptsetup@luks\x2db0cf11e3\x2dbfd7\x2d4bfb\x2d9819\x2d287301a1c25e.service"
     ];
   };
 
