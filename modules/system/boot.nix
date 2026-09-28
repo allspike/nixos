@@ -31,15 +31,6 @@
         ];
       };
     };
-    fileSystems."/mnt/storage" = {
-      device = "/dev/mapper/data-storage";
-      fsType = "btrfs";
-      options = [
-        "defaults"
-        "compress=zstd"
-        "nofail"
-      ];
-    };
     loader = {
       systemd-boot.enable = false;
       efi.canTouchEfiVariables = true;
@@ -56,6 +47,16 @@
       "splash"
       "rd.udev.log_level=3"
       "rd.systemd.show_status=auto"
+    ];
+  };
+
+  fileSystems."/mnt/storage" = {
+    device = "/dev/mapper/data-storage";
+    fsType = "btrfs";
+    options = [
+      "defaults"
+      "compress=zstd"
+      "nofail"
     ];
   };
 }
