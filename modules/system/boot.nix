@@ -2,9 +2,6 @@
 
 {
   security.tpm2.enable = true;
-  imports = [
-    ./filesystem.nix
-  ];
   boot = {
     plymouth = {
       enable = true;
@@ -18,9 +15,6 @@
     initrd = {
       systemd.enable = true;
       systemd.tpm2.enable = true;
-      imports = [
-        ./encrypt.nix
-      ];
     };
 
     loader = {
