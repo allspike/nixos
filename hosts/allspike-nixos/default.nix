@@ -15,9 +15,9 @@
     ../../modules/system/encrypt.nix
     ../../modules/system/filesystem.nix
 
-    ../../modules/desktop/plasma.nix
-    ../../modules/desktop/kde_overlay.nix
-    #../../modules/desktop/cosmic.nix
+    #../../modules/desktop/plasma.nix
+    #../../modules/desktop/kde_overlay.nix
+    ../../modules/desktop/cosmic.nix
     ../../modules/dev/rust.nix
 
     ../../modules/hardware/gpu-amd.nix
