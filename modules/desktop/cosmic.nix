@@ -4,10 +4,6 @@
   services = {
     displayManager.cosmic-greeter.enable = true;
     desktopManager.cosmic.enable = true;
-    displayManager.autoLogin = {
-      enable = true;
-      user = "allspike";
-    };
     system76-scheduler.enable = true;
   };
 
