@@ -14,6 +14,7 @@
     ../../modules/system/nh.nix
     ../../modules/system/encrypt.nix
     ../../modules/system/filesystem.nix
+    ../../modules/system/lix.nix
 
     #../../modules/desktop/plasma.nix
     #../../modules/desktop/kde_overlay.nix

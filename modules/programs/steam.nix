@@ -22,8 +22,4 @@
       };
     };
   };
-
-  programs.gamescope = {
-    enable = true;
-  };
 }
