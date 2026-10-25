@@ -13,7 +13,6 @@
       '';
     };
     initrd = {
-      systemd.enable = true;
       systemd.tpm2.enable = true;
     };
 
