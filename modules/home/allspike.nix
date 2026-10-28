@@ -1,9 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   home-manager.users.allspike = { pkgs, ... }: {
     imports = [
       ./gaming.nix
-
+      inputs.zen-browser.homeModules.default
     ];
     home.stateVersion = "26.05";
     home.homeDirectory = "/home/allspike";
