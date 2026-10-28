@@ -18,6 +18,7 @@
   };
 
   outputs =
+    inputs@{ self, nixpkgs, ... }:
     {
       nixpkgs,
       home-manager,
@@ -29,6 +30,7 @@
     {
       nixosConfigurations.allspike-nixos = nixpkgs.lib.nixosSystem {
         inherit system;
+        specialArgs = { inherit inputs; };
         modules = [
           ./hosts/allspike-nixos
           home-manager.nixosModules.home-manager
