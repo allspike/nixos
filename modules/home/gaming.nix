@@ -9,7 +9,6 @@
     gamescope
     dusklight
     retroarch-full
-    bottles
     faugus-launcher
     protonup-qt
   ];
