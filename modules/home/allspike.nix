@@ -3,7 +3,6 @@
   home-manager.users.allspike = { pkgs, ... }: {
     imports = [
       ./gaming.nix
-      inputs.zen-browser.homeModules.default
     ];
     home.stateVersion = "26.05";
     home.homeDirectory = "/home/allspike";
@@ -14,11 +13,8 @@
       wootility
       fastfetch
       bitwarden-desktop
+      inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
-    programs.zen-browser = {
-      enable = true;
-      setAsDefaultBrowser = true;
-    };
     programs.helix = {
       defaultEditor = true;
       enable = true;
