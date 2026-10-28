@@ -14,6 +14,7 @@
       fastfetch
       bitwarden-desktop
     ];
+    inputs.zen-browser.packages."${pkgs.stdenv.hostPlatform.system}".default;
     programs.helix = {
       defaultEditor = true;
       enable = true;
