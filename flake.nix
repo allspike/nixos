@@ -18,10 +18,10 @@
   };
 
   outputs =
-    {
+    inputs@{
+      self,
       nixpkgs,
       home-manager,
-      inputs,
       ...
     }:
     let
