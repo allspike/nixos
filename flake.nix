@@ -18,7 +18,12 @@
   };
 
   outputs =
-    inputs@{ self, nixpkgs, ... }:
+    {
+      self,
+      nixpkgs,
+      inputs,
+      ...
+    }:
     {
       nixpkgs,
       home-manager,
