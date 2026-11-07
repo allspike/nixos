@@ -4,7 +4,7 @@
     imports = [
       ./gaming.nix
       inputs.zen-browser.homeModules.beta
-      inputs.blip.nixosModules.default
+      inputs.blip.homeModules.default
     ];
     home.stateVersion = "26.05";
     home.homeDirectory = "/home/allspike";
