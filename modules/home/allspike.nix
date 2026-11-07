@@ -4,6 +4,7 @@
     imports = [
       ./gaming.nix
       inputs.zen-browser.homeModules.beta
+      inputs.blip.nixosModules.default
     ];
     home.stateVersion = "26.05";
     home.homeDirectory = "/home/allspike";
@@ -19,6 +20,7 @@
       enable = true;
       setAsDefaultBrowser = true;
     };
+    programs.blip.enable = true;
     programs.helix = {
       defaultEditor = true;
       enable = true;

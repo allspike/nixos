@@ -13,6 +13,7 @@
         nixpkgs.follows = "nixpkgs";
         home-manager.follows = "home-manager";
       };
+      blip.url = "github:blip-net/nix";
     };
 
   };
