@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  services.scx.enable = true;
+  services.scx-loader.enable = true;
   services.lact.enable = true;
   services.udev.packages = with pkgs; [ wooting-udev-rules ];
 
