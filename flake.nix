@@ -15,7 +15,7 @@
         home-manager.follows = "home-manager";
       };
     };
-    # Blip flake 
+    # Blip flake
     blip.url = "github:blip-net/nix";
     # Fenix - Rust toolchain for dev
     fenix = {
@@ -29,7 +29,7 @@
       self,
       nixpkgs,
       home-manager,
-      fenix
+      fenix,
       ...
     }:
     let
