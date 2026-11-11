@@ -8,16 +8,8 @@
     shadps4-qtlauncher
     gamescope
     dusklight
-    retroarch-full
+    #retroarch-full
     faugus-launcher
     protonup-qt
-    (nodtool.overrideAttrs (oldAttrs: {
-      nativeBuildInputs = (oldAttrs.nativeBuildInputs or [ ]) ++ [
-        pkg-config
-      ];
-      buildInputs = (oldAttrs.buildInputs or [ ]) ++ [
-        zstd
-      ];
-    }))
   ];
 }
