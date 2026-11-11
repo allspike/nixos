@@ -8,7 +8,7 @@
     shadps4-qtlauncher
     gamescope
     dusklight
-    #retroarch-full
+    retroarch-full
     faugus-launcher
     protonup-qt
   ];
