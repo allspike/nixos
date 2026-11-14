@@ -10,6 +10,7 @@
     dusklight
     retroarch-full
     faugus-launcher
+    wowup-cf
     protonup-qt
   ];
 }
